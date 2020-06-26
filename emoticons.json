@@ -1,0 +1,20 @@
+{
+	"homepage": "https://www.curseforge.com/minecraft/mc-mods/emoticons/",
+	"1.12.2": {
+        "0.5": "This update is compatibility update to work correctly with McLib 2.0, and a couple of neat features.",
+		"0.4.3": "This hot patch update fixes stupid transparency issue with model when used with Optifine, because Optifine changes blending function smh.",
+		"0.4.2": "This update fixes a couple of issues with multiplayer servers (\"wallhack\" aka F3 skeleton rendering through walls and invisibility potions).",
+		"0.4.1": "This tiny patch update makes Emoticons work with Blockbuster 1.6.4.",
+		"0.4": "This small update that adds 9 different emote and fixes a couple of bugs.",
+		"0.3.2": "This small patch update provides new emote animations made by Nazzy and Moris, beside that it also fixes one mod compatibility issue with PlayerRevive mod.",
+		"0.3.1": "This patch update fixes few issues with emote synchronization.",
+		"0.3": "This long update took long quite long to get finished, and I don't think I actually got done anything finished, but here we go.",
+		"0.2.1": "Third update. This quick patch provides few important tweaks, it removed the F1 watermark, fixes dying animation not showing up during emote, adds empty sound events for dances, adds an option in emote configuration menu to disable non-emote animations, decreased the file size of the jar, and finally added extra information on the crash screen (so it would be easy to understand what's going on with access key).",
+		"0.2": "Second update. This update adds 10 new emotes, support for vanilla armor, and tweaks the key binds to allow instant switch of an emote (instead of moving or pressing stop emote key).",
+		"0.1": "Initial release. It adds custom player animations and emote system, featuring over 25 emotes (custom and from Fortnite)."
+	},
+	"promos": {
+		"1.12.2-latest": "0.5",
+		"1.12.2-recommended": " 0.5"
+	}
+}
