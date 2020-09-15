@@ -1,0 +1,187 @@
+#PARSE_ESCAPES
+
+# GUI and other stuff
+emoticons.keys.category=Emoticonos y emociones
+emoticons.keys.random=Emoticono aleatorio
+emoticons.keys.emote1=Emoticono 1
+emoticons.keys.emote2=Emoticono 2
+emoticons.keys.emote3=Emoticono 3
+emoticons.keys.emote4=Emoticono 4
+emoticons.keys.emote5=Emoticono 5
+emoticons.keys.emote6=Emoticono 6
+emoticons.keys.emotes=Configurar emoticonos
+emoticons.keys.stop_emote=Parar emoticono
+
+# Commands
+emoticons.commands.emote.help=Comandos de Emoticono. Comando del lado del cliente para cambiar su propio emoticono. Este comando admite la finalización de pestañas.\n/emote [emote_name]
+
+# Blockbuster integration
+blockbuster.gui.record_editor.actions.fc_emote.title=Emoticonos y emociones
+blockbuster.gui.record_editor.actions.fc_emote.desc=Esta acción es responsable de activar un emoticono de Emociones. ¡Funciona solo con actores de jugadores falsos que usan morfos de jugador o ningún morfo!
+
+# GUI
+emoticons.gui.title=Emoticonos
+emoticons.gui.search=Buscando...
+emoticons.gui.emote=(Emoticono %s)
+emoticons.gui.total_emotes=(total %s)
+emoticons.gui.disable_animations=Deshabilitar animaciones que no sean emoticonos
+emoticons.gui.enable_simple_models=Habilitar modelos más simples
+
+# Emoticono dances
+emoticons.emotes.best_mates.title=Marlon's Exercise
+emoticons.emotes.best_mates.desc=¡El crédito va a Marlon Webb por sus increíbles vines!
+
+emoticons.emotes.default.title=Movimientos de baile
+emoticons.emotes.default.desc=Exprésate en la caja de arena.
+
+emoticons.emotes.disco_fever.title=Fiebre disco
+emoticons.emotes.disco_fever.desc=Arde bebé, arde.
+
+emoticons.emotes.electro_shuffle.title=Electro Shuffle
+emoticons.emotes.electro_shuffle.desc=Consigue tus donks, vamos a la ciudad de Hardbass.
+
+emoticons.emotes.floss.title=Floss
+emoticons.emotes.floss.desc=¡MIRA LO QUE PUEDO HACER!
+
+emoticons.emotes.hype.title=Hype
+emoticons.emotes.hype.desc=Siente el hype.
+
+emoticons.emotes.infinite_dab.title=Dab infinito
+emoticons.emotes.infinite_dab.desc=No puedo parar, no pararé.
+
+emoticons.emotes.orange_justice.title=Justicia naranja
+emoticons.emotes.orange_justice.desc="También es un gran ejercicio."
+
+emoticons.emotes.star_power.title=Poder de las estrellas
+emoticons.emotes.star_power.desc=No hay autógrafos por favor.
+
+emoticons.emotes.tidy.title=Tidy
+emoticons.emotes.tidy.desc=¡Déjalo caer como si estuviera ardiendo!
+
+emoticons.emotes.fresh.title=Fresh
+emoticons.emotes.fresh.desc=...Como el Príncipe de Bel-Air.
+
+emoticons.emotes.boneless.title=Boneless
+emoticons.emotes.boneless.desc=Más allá de bendy.
+
+emoticons.emotes.gangnam_style.title=Gangnam Style
+emoticons.emotes.gangnam_style.desc=¡Oppa Gangnam Style!
+
+emoticons.emotes.take_the_l.title=Take The L
+emoticons.emotes.take_the_l.desc=Saborea la W.
+
+emoticons.emotes.skibidi.title=SKIBIDI
+emoticons.emotes.skibidi.desc=Skibidi wap-pa-pa
+
+emoticons.emotes.squat_kick.title=Squat kick
+emoticons.emotes.squat_kick.desc=No te saltes el día de piernas.
+
+emoticons.emotes.free_flow.title=Free flow
+emoticons.emotes.free_flow.desc=Siente el flow.
+
+emoticons.emotes.shimmer.title=Shimmer
+emoticons.emotes.shimmer.desc=Bordeando niveles excesivos de sass.
+
+emoticons.emotes.get_funky.title=Get funky
+emoticons.emotes.get_funky.desc=Encuentra tu ritmo.
+
+# Just emoticonos
+emoticons.emotes.boy.title=Boy
+emoticons.emotes.boy.desc=¿Qué son esos...?
+
+emoticons.emotes.chicken.title=Gallina
+emoticons.emotes.chicken.desc=¿Qué pasa, McFly? ¿Eres un gallina?
+
+emoticons.emotes.confused.title=Confundido
+emoticons.emotes.confused.desc=En serio. ¿Qué ha pasado?
+
+emoticons.emotes.dab.title=Dab
+emoticons.emotes.dab.desc=Dab sobre los haters.
+
+emoticons.emotes.facepalm.title=Face palm
+emoticons.emotes.facepalm.desc=¿Quién hace eso?...
+
+emoticons.emotes.popcorn.title=Popcorn
+emoticons.emotes.popcorn.desc=Vine aquí solo para leer los comentarios.
+
+emoticons.emotes.pure_salt.title=Pure Salt
+emoticons.emotes.pure_salt.desc=Echa sal a tu carne como Salt Bae.
+
+emoticons.emotes.thinking.title=Pensando
+emoticons.emotes.thinking.desc=Mmmm...
+
+emoticons.emotes.wave.title=La ola
+emoticons.emotes.wave.desc=¡Seguro amigo!
+
+emoticons.emotes.laughing.title=Riéndome
+emoticons.emotes.laughing.desc=¡Jajajajajaja...!
+
+emoticons.emotes.crying.title=Llorando
+emoticons.emotes.crying.desc=*snif*
+
+emoticons.emotes.yes.title=Si
+emoticons.emotes.yes.desc=Eso es correcto
+
+emoticons.emotes.no.title=No
+emoticons.emotes.no.desc=No
+
+emoticons.emotes.clapping.title=Aplausos
+emoticons.emotes.clapping.desc=¡Felicidades amigos!
+
+emoticons.emotes.calculated.title=Calculated
+emoticons.emotes.calculated.desc=No puedes cavar directamente hacia abajo, si no tienes ninguna herramienta.
+
+emoticons.emotes.bow.title=Reverencia
+emoticons.emotes.bow.desc="¡Es un honor conocerte!"
+
+emoticons.emotes.shrug.title=Encogerse de hombros
+emoticons.emotes.shrug.desc=Ni idea...
+
+emoticons.emotes.t_pose.title=T-pose
+emoticons.emotes.t_pose.desc=*fuerte ruido de graves*
+
+emoticons.emotes.salute.title=Salute
+emoticons.emotes.salute.desc=o7
+
+emoticons.emotes.rock_paper_scissors.title=Piedra, papel, tijeras
+emoticons.emotes.rock_paper_scissors.desc=¡Piedra, papel, tijeras, ya!
+
+emoticons.emotes.fist.title=Puño
+emoticons.emotes.fist.desc="¡Los diamantes serán míos!"
+
+emoticons.emotes.pointing.title=Señalar
+emoticons.emotes.pointing.desc=Sí, tú.
+
+emoticons.emotes.twerk.title=Twerk
+emoticons.emotes.twerk.desc=¡Mueve ese culo!
+
+emoticons.emotes.club.title=Clubbing
+emoticons.emotes.club.desc=Pum pum pum pum.
+
+# Emoticonos 2020
+emoticons.emotes.bitchslap.title=Slap
+emoticons.emotes.bitchslap.desc=*slaps*
+
+emoticons.emotes.bongo_cat.title=Bongo Cat
+emoticons.emotes.bongo_cat.desc=No tengo ni idea de lo que hice aquí...
+
+emoticons.emotes.breathtaking.title=Impresionante
+emoticons.emotes.breathtaking.desc=¡No, tú eres impresionante!
+
+emoticons.emotes.disgusted.title=Asqueado
+emoticons.emotes.disgusted.desc=Que alguien llame a un paramédico...
+
+emoticons.emotes.exhausted.title=Exausto
+emoticons.emotes.exhausted.desc=Como cada guardia debe estar...
+
+emoticons.emotes.punch.title=¡Puñetazo!
+emoticons.emotes.punch.desc=Poooooowww
+
+emoticons.emotes.sneeze.title=Estornudar
+emoticons.emotes.sneeze.desc=¡Jesús!
+
+emoticons.emotes.threatening.title=Amenaza
+emoticons.emotes.threatening.desc=Será mejor que te mantengas alejado de mí
+
+emoticons.emotes.woah.title=Woah
+emoticons.emotes.woah.desc=Toma ese meme de TikTok

@@ -1,0 +1,223 @@
+#PARSE_ESCAPES
+# Локализацию запилил Andruxioid, ёбанарот.
+# GUI and other stuff
+emoticons.keys.category=Эмотиконы
+emoticons.keys.random=Случайный эмотикон
+emoticons.keys.emote1=Эмотикон 1
+emoticons.keys.emote2=Эмотикон 2
+emoticons.keys.emote3=Эмотикон 3
+emoticons.keys.emote4=Эмотикон 4
+emoticons.keys.emote5=Эмотикон 5
+emoticons.keys.emote6=Эмотикон 6
+emoticons.keys.emotes=Настроить эмотиконы
+emoticons.keys.stop_emote=Остановить эмотикон
+
+morph.section.emoticons=Эмотиконс
+morph.category.emoticons=Модели
+
+# Commands
+emoticons.commands.emote.help=Команда эмотикона. Клиентская команда для изменения вашего собственного эмотикона. Эта комманда поддерживает перелистывание клавишей TAB.\n/emote [название_эмотикона]
+
+# Blockbuster integration
+blockbuster.gui.record_editor.actions.fc_emote.title=Эмотикон
+blockbuster.gui.record_editor.actions.fc_emote.desc=Это действие отвечает за активацию эмотикона. Работает только с морфами игроков использующих технологию поддельного игрока!
+
+# Config
+emoticons.config.title=Эмотиконс
+
+emoticons.config.general.title=Общие
+emoticons.config.general.tooltip=Общие настройки Эмотиконс
+
+emoticons.config.general.disable_sound_events=Выключить звуки при анимациях
+emoticons.config.comments.general.disable_sound_events=Должны лы быть извдаваемые звуки при анимацих зарегистрированными (полезно для серверов, которые хотят включить дополнительную совместимость между модами, ДЛЯ ПРИМЕНЕНИЯ НЕОБХОДИМ ПЕРЕЗАПУСК)
+
+emoticons.config.animations.title=Анимации
+emoticons.config.animations.tooltip=Настройки анимаций Эмотиконс
+
+emoticons.config.animations.disable=Отключить анимации не-эмотиконы
+emoticons.config.comments.animations.disable=Должны ли отображаться анимации бега, ходьбы, подкрадывания, плавания, полёта и т.д.?
+emoticons.config.animations.simple=Упрощённые модели
+emoticons.config.comments.animations.simple=Должны ли вместо обычных моделей использоваться упрощённые модели (имеют меньшее количество полигонов, что в теории должно положительно влиять на производительность)
+
+emoticons.config.player_preview.title=Предпросмотр игрока
+emoticons.config.player_preview.tooltip=Опция предпросмотра анимаций игрока в углу при игре от первого лица
+
+emoticons.config.player_preview.mode=Режим предпросмотра
+emoticons.config.comments.player_preview.mode=Определяет когда необходимо показывать предпросмотр анимаций игрока: только во время эмотиконов, всегда или никогда
+emoticons.config.player_preview.scale=Размер
+emoticons.config.comments.player_preview.scale=Размер предпросмотра анимайи игрока
+emoticons.config.player_preview.x=Сдвиг по X
+emoticons.config.comments.player_preview.x=Свдиг предпросмотра анимаций игрока по оси X
+emoticons.config.player_preview.y=Сдвиг по Y
+emoticons.config.comments.player_preview.y=Свдиг предпросмотра анимаций игрока по оси Y
+
+# GUI
+emoticons.gui.title=Эмотиконы
+emoticons.gui.search=Искать...
+emoticons.gui.emote=(Эмотикон %s)
+emoticons.gui.total_emotes=(Всего %s)
+emoticons.gui.disable_animations=Отключить анимации не-эмотиконы
+emoticons.gui.enable_simple_models=Включить упрощённые модели
+
+emoticons.player_preview.emote=Только при эмотиконах
+emoticons.player_preview.always=Всегда
+emoticons.player_preview.never=Никогда
+
+# Emote dances
+emoticons.emotes.best_mates.title=Упражнение Марлона
+emoticons.emotes.best_mates.desc=Спасибо Марлону Веббу за его офигенные вайны!
+
+emoticons.emotes.default.title=Танцы
+emoticons.emotes.default.desc=Самовыразись в песочнице.
+
+emoticons.emotes.disco_fever.title=Дискомания
+emoticons.emotes.disco_fever.desc=Жги, детка, жги.
+
+emoticons.emotes.electro_shuffle.title=Электрошаффл
+emoticons.emotes.electro_shuffle.desc=Доставайте пивчанский, мы едем в Хардбассовск.
+
+emoticons.emotes.floss.title=Флосс
+emoticons.emotes.floss.desc=СМАРИ ЧО УМЕЮ!
+
+emoticons.emotes.hype.title=Хайп
+emoticons.emotes.hype.desc=На хайпе.
+
+emoticons.emotes.infinite_dab.title=Бесконечный Даб
+emoticons.emotes.infinite_dab.desc=Не хочу останавливаться, да и зачем?
+
+emoticons.emotes.orange_justice.title=Оранжевое Настроение
+emoticons.emotes.orange_justice.desc=А ещё это замечательное упражнение.
+
+emoticons.emotes.star_power.title=Звезда Танцпола
+emoticons.emotes.star_power.desc=Сегодня автографов не даю.
+
+emoticons.emotes.tidy.title=Чистюля
+emoticons.emotes.tidy.desc=Что-то как-то горячо!
+
+emoticons.emotes.fresh.title=Свежак
+emoticons.emotes.fresh.desc=Сойдёт для пляжной вечеринки.
+
+emoticons.emotes.boneless.title=Без костей
+emoticons.emotes.boneless.desc=Пересгиб.
+
+emoticons.emotes.gangnam_style.title=Гангнам Стайл
+emoticons.emotes.gangnam_style.desc=Опа Гангнам Стайл!
+
+emoticons.emotes.take_the_l.title=Победитель сверху
+emoticons.emotes.take_the_l.desc=Побежденный снизу.
+
+emoticons.emotes.skibidi.title=Скибиди
+emoticons.emotes.skibidi.desc=Скибиди ва-па-па!
+
+emoticons.emotes.squat_kick.title=Танец на корточках
+emoticons.emotes.squat_kick.desc=Мы тут ногами машем.
+
+emoticons.emotes.free_flow.title=Поток сознания
+emoticons.emotes.free_flow.desc=Почувствуй движение.
+
+emoticons.emotes.shimmer.title=Мерцание
+emoticons.emotes.shimmer.desc=За гранью сасможного.
+
+emoticons.emotes.get_funky.title=Смелее
+emoticons.emotes.get_funky.desc=Отыщи свой ритм.
+
+# Just emotes
+emoticons.emotes.boy.title=Парниша
+emoticons.emotes.boy.desc=Это ещё что?
+
+emoticons.emotes.chicken.title=Кукорела
+emoticons.emotes.chicken.desc=Курлык-курлык...
+
+emoticons.emotes.confused.title=В Непонятках
+emoticons.emotes.confused.desc=Серьёзно, что произошло?
+
+emoticons.emotes.dab.title=Даб
+emoticons.emotes.dab.desc=Подабай на хэйтеров.
+
+emoticons.emotes.facepalm.title=Рукалицо
+emoticons.emotes.facepalm.desc=Кто так вообще делает?..
+
+emoticons.emotes.popcorn.title=Попкорн
+emoticons.emotes.popcorn.desc=Я пришёл сюда полистать комментики.
+
+emoticons.emotes.pure_salt.title=Соль на раны
+emoticons.emotes.pure_salt.desc=Ммм, солька.
+
+emoticons.emotes.thinking.title=Задумчиво
+emoticons.emotes.thinking.desc=Хммм...
+
+emoticons.emotes.wave.title=Приветствие
+emoticons.emotes.wave.desc=Дарова, чувак!
+
+emoticons.emotes.laughing.title=Смех
+emoticons.emotes.laughing.desc=Хахахахахаха..!
+
+emoticons.emotes.crying.title=Плач
+emoticons.emotes.crying.desc=*хнык*
+
+emoticons.emotes.yes.title=Да
+emoticons.emotes.yes.desc=Подтверждаю
+
+emoticons.emotes.no.title=Нет
+emoticons.emotes.no.desc=На нет и суда нет.
+
+emoticons.emotes.clapping.title=Хлопки
+emoticons.emotes.clapping.desc=Друзья, мои поздравления!
+
+emoticons.emotes.calculated.title=Продуманчик
+emoticons.emotes.calculated.desc=Ты не можешь копать под себя, если у тебя нет лопаты.
+
+emoticons.emotes.bow.title=Поклон
+emoticons.emotes.bow.desc="Для меня честь встретиться с вами!"
+
+emoticons.emotes.shrug.title=Плечи
+emoticons.emotes.shrug.desc=Кто его знает...
+
+emoticons.emotes.t_pose.title=Т-поза
+emoticons.emotes.t_pose.desc=*бассит*
+
+emoticons.emotes.salute.title=Здравия желаю!
+emoticons.emotes.salute.desc=o7
+
+emoticons.emotes.rock_paper_scissors.title=Камень, ножницы, бумага
+emoticons.emotes.rock_paper_scissors.desc=Камень, ножницы, бумага, дробовик!
+
+emoticons.emotes.fist.title=Кулак
+emoticons.emotes.fist.desc="Мои алмазы!!!"
+
+emoticons.emotes.pointing.title=Указание
+emoticons.emotes.pointing.desc=Да, ты.
+
+emoticons.emotes.twerk.title=Тверк
+emoticons.emotes.twerk.desc=Тряси дниной, ёлы-палы!
+
+emoticons.emotes.club.title=Клубняк
+emoticons.emotes.club.desc=Бумц бумц бумц бумц.
+
+# Emotes 2020, в 2020-м году был такой пиздец, что в эмотиконс пришли мемы из тиктока.
+emoticons.emotes.bitchslap.title=Шлёп
+emoticons.emotes.bitchslap.desc=*шлёп*
+
+emoticons.emotes.bongo_cat.title=Бонго Кот
+emoticons.emotes.bongo_cat.desc=Понятия не имею что я тут наделал...
+
+emoticons.emotes.breathtaking.title=Восхитительность
+emoticons.emotes.breathtaking.desc=О нет, это вы восхитительны!
+
+emoticons.emotes.disgusted.title=Отвращение
+emoticons.emotes.disgusted.desc=Врача, врача, позовите врача...
+
+emoticons.emotes.exhausted.title=Усталость
+emoticons.emotes.exhausted.desc=У каждого охранника бывают эти дни...
+
+emoticons.emotes.punch.title=Пинок!
+emoticons.emotes.punch.desc=Пыуууууууэу
+
+emoticons.emotes.sneeze.title=Чих
+emoticons.emotes.sneeze.desc=Будьте здоровы!
+
+emoticons.emotes.threatening.title=Угроза
+emoticons.emotes.threatening.desc=Держись от меня подальше
+
+emoticons.emotes.woah.title=Воу
+emoticons.emotes.woah.desc=Теперь тут есть мемы из ТикТока
