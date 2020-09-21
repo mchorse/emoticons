@@ -1,0 +1,244 @@
+#PARSE_ESCAPES
+
+# GUI and other stuff
+emoticons.keys.category=Emoticons 表情
+emoticons.keys.random=隨機表情
+emoticons.keys.emote1=表情 1
+emoticons.keys.emote2=表情 2
+emoticons.keys.emote3=表情 3
+emoticons.keys.emote4=表情 4
+emoticons.keys.emote5=表情 5
+emoticons.keys.emote6=表情 6
+emoticons.keys.emotes=配置表情
+emoticons.keys.stop_emote=停止表情
+
+morph.section.emoticons=Emoticons
+morph.category.emoticons=模型
+
+# Commands
+emoticons.commands.emote.help=表情命令。客戶端執行命令可更改您自己的表情。該命令支持 Tab 補全。\n/emote [表情名稱]
+
+# Blockbuster integration
+blockbuster.gui.record_editor.actions.fc_emote.title=Emoticons 表情
+blockbuster.gui.record_editor.actions.fc_emote.desc=該動作負責激活壹個 Emoticons 表情。僅對使用玩家偽裝或完全不使用偽裝的假玩家演員有效！
+
+# Config
+emoticons.config.title=Emoticons
+
+emoticons.config.reload=重載動畫
+emoticons.config.open=打開用戶文件夾
+
+emoticons.config.general.title=常規
+emoticons.config.general.tooltip=Emoticons mod 常規選項
+
+emoticons.config.general.disable_sound_events=禁用聲音事件
+emoticons.config.comments.general.disable_sound_events=聲音事件是否不應該被註冊 (對於需要啟用可選 mod 兼容性的服務器很有用, 重啟後生效)
+
+emoticons.config.animations.title=動畫
+emoticons.config.animations.tooltip=Emoticons 動畫選項
+
+emoticons.config.animations.disable=禁用非表情動畫
+emoticons.config.comments.animations.disable=是否播放跑步、潛行、遊泳、飛行等動畫?
+emoticons.config.animations.simple=簡化模型
+emoticons.config.comments.animations.simple=是否應用簡化模型 (幾何形狀較少, 理論上可以更快) 來代替光滑的彎曲
+
+emoticons.config.player_preview.title=玩家預覽
+emoticons.config.player_preview.tooltip=在右上角顯示的玩家第壹人稱效果預覽
+
+emoticons.config.player_preview.mode=預覽模式
+emoticons.config.comments.player_preview.mode=設置合適顯示效果預覽，盡玩家作出表情時顯示 / 始終顯示 / 始終不顯示
+emoticons.config.player_preview.scale=縮放
+emoticons.config.comments.player_preview.scale=效果預覽中的角色的縮放
+emoticons.config.player_preview.x=X 偏移
+emoticons.config.comments.player_preview.x=玩家效果預覽在 X 軸的偏移
+emoticons.config.player_preview.y=Y 偏移
+emoticons.config.comments.player_preview.y=玩家效果預覽在 Y 軸的偏移
+
+# GUI
+emoticons.gui.title=表情
+emoticons.gui.search=搜索...
+emoticons.gui.emote=(表情 %s)
+emoticons.gui.total_emotes=(總數 %s)
+emoticons.gui.disable_animations=禁用非表情動畫
+emoticons.gui.enable_simple_models=啟用簡化模型
+
+emoticons.player_preview.emote=僅顯示表情
+emoticons.player_preview.always=始終
+emoticons.player_preview.never=從不
+
+# Emote dances
+emoticons.emotes.best_mates.title=Marlon 的鍛煉(best_mates)
+emoticons.emotes.best_mates.desc=來源於 Marlon Webb 的精彩整活小視頻! Take on me~
+
+emoticons.emotes.default.title=舞步(default)
+emoticons.emotes.default.desc=在沙盒遊戲裏盡情釋放妳的舞技
+
+emoticons.emotes.disco_fever.title=狂熱 Disco(disco_fever)
+emoticons.emotes.disco_fever.desc=燃燒吧 baby，燃燒吧！
+
+emoticons.emotes.electro_shuffle.title=電曳步舞(electro_shuffle)
+emoticons.emotes.electro_shuffle.desc=帶上妳的小毛驢兒，我們的下壹站是 Hardbass 鎮
+
+emoticons.emotes.floss.title=牙線舞(floss)
+emoticons.emotes.floss.desc=看我給妳整個活！
+
+emoticons.emotes.hype.title=嗨起來(hype)
+emoticons.emotes.hype.desc=壹起嗨起來吧
+
+emoticons.emotes.infinite_dab.title=無限 Dab(infinite_dab)
+emoticons.emotes.infinite_dab.desc=停不下來，根本停不下來
+
+emoticons.emotes.orange_justice.title=橙色正義(orange_justice)
+emoticons.emotes.orange_justice.desc=“這也是很好的鍛煉”
+
+emoticons.emotes.star_power.title=明星效應(star_power)
+emoticons.emotes.star_power.desc=不給簽名哦
+
+emoticons.emotes.tidy.title=Tidy
+emoticons.emotes.tidy.desc=像手裏有燙手的煙頭壹樣丟掉！
+
+emoticons.emotes.fresh.title=新鮮(fresh)
+emoticons.emotes.fresh.desc=...就像《新鮮王子妙事多》裏的那樣
+
+emoticons.emotes.boneless.title=無骨舞(boneless)
+emoticons.emotes.boneless.desc=超越了彎曲的存在
+
+emoticons.emotes.gangnam_style.title=江南 Style(gangnam_style)
+emoticons.emotes.gangnam_style.desc=Oppa Gangnam Style!
+
+emoticons.emotes.take_the_l.title=接受失敗吧(take_the_l)
+emoticons.emotes.take_the_l.desc=守護家園
+
+emoticons.emotes.skibidi.title=SKIBIDI
+emoticons.emotes.skibidi.desc=Skibidi wap-pa-pa
+
+emoticons.emotes.squat_kick.title=深蹲踢腿(squat_kick)
+emoticons.emotes.squat_kick.desc=別錯過卡腿的日子
+
+emoticons.emotes.free_flow.title=隨波逐流(free_flow)
+emoticons.emotes.free_flow.desc=感受流動
+
+emoticons.emotes.shimmer.title=閃光舞(shimmer)
+emoticons.emotes.shimmer.desc=近乎過分的無禮
+
+emoticons.emotes.get_funky.title=放克的感覺(get_funky)
+emoticons.emotes.get_funky.desc=找到妳的最佳狀態
+
+# Just emotes
+emoticons.emotes.boy.title=我去(boy)
+emoticons.emotes.boy.desc=這都整了個啥啊？
+
+emoticons.emotes.chicken.title=弱雞(chicken)
+emoticons.emotes.chicken.desc=怎麽回事小老弟？就這？
+
+emoticons.emotes.confused.title=疑惑(confused)
+emoticons.emotes.confused.desc=說真的，這是啥情況啊？
+
+emoticons.emotes.dab.title=Dab
+emoticons.emotes.dab.desc=對妳們這些巨魔我的姿勢就只有 Dab
+
+emoticons.emotes.facepalm.title=捂臉(facepalm)
+emoticons.emotes.facepalm.desc=這世上居然能有人做到這種事?...
+
+emoticons.emotes.popcorn.title=爆米花(popcorn)
+emoticons.emotes.popcorn.desc=我是壹般通過觀眾
+
+emoticons.emotes.pure_salt.title=純粹的鹽(pure_salt)
+emoticons.emotes.pure_salt.desc=像撒鹽哥那樣把鹽灑在牛肉上
+
+emoticons.emotes.thinking.title=沈思(thinking)
+emoticons.emotes.thinking.desc=Hmmm...
+
+emoticons.emotes.wave.title=揮手(wave)
+emoticons.emotes.wave.desc=吃了嗎，好兄弟！
+
+emoticons.emotes.laughing.title=大笑(laughing)
+emoticons.emotes.laughing.desc=哈哈哈哈哈哈...!
+
+emoticons.emotes.crying.title=哭泣(crying)
+emoticons.emotes.crying.desc=*嗚嗚*
+
+emoticons.emotes.yes.title=沒錯(yes)
+emoticons.emotes.yes.desc=說的沒錯
+
+emoticons.emotes.no.title=不(no)
+emoticons.emotes.no.desc=不
+
+emoticons.emotes.clapping.title=鼓掌(clapping)
+emoticons.emotes.clapping.desc=恭喜妳，我的好朋友！
+
+emoticons.emotes.calculated.title=比劃(calculated)
+emoticons.emotes.calculated.desc=如果妳什麽工具都沒有，就不能直接往下挖
+
+emoticons.emotes.bow.title=鞠躬(bow)
+emoticons.emotes.bow.desc="請多指教！"
+
+emoticons.emotes.shrug.title=聳肩(shrug)
+emoticons.emotes.shrug.desc=我也不知道...
+
+emoticons.emotes.t_pose.title=T 字(t_pose)
+emoticons.emotes.t_pose.desc=*全 損 音 質*
+
+emoticons.emotes.salute.title=敬禮(salute)
+emoticons.emotes.salute.desc=o7
+
+emoticons.emotes.rock_paper_scissors.title=剪刀石頭布(rock_paper_scissors)
+emoticons.emotes.rock_paper_scissors.desc=剪刀，石頭，布！
+
+emoticons.emotes.fist.title=握緊拳頭(fist)
+emoticons.emotes.fist.desc="硬了！拳頭硬了！"
+
+emoticons.emotes.pointing.title=向前壹指(pointing)
+emoticons.emotes.pointing.desc=沒錯，就是妳
+
+emoticons.emotes.twerk.title=電臀舞(twerk)
+emoticons.emotes.twerk.desc=搖起來！
+
+emoticons.emotes.club.title=泡吧舞(club)
+emoticons.emotes.club.desc=Pum pum pum pum.
+
+# Emotes 2020
+emoticons.emotes.bitchslap.title=扇耳光(bitchslap)
+emoticons.emotes.bitchslap.desc=*啪*
+
+emoticons.emotes.bongo_cat.title=手鼓貓(bongo_cat)
+emoticons.emotes.bongo_cat.desc=我也不知道我整了個啥...
+
+emoticons.emotes.breathtaking.title=Breathtaking
+emoticons.emotes.breathtaking.desc=No, you're breathtaking!
+
+emoticons.emotes.disgusted.title=惡心(disgusted)
+emoticons.emotes.disgusted.desc=看來我得去找護士了...
+
+emoticons.emotes.exhausted.title=疲憊不堪(exhausted)
+emoticons.emotes.exhausted.desc=每個看門的人都是如此...
+
+emoticons.emotes.punch.title=出拳(punch)
+emoticons.emotes.punch.desc=對他使用炎拳吧！
+
+emoticons.emotes.sneeze.title=打噴嚏(sneeze)
+emoticons.emotes.sneeze.desc=大吉大利！
+
+emoticons.emotes.threatening.title=威脅(threatening)
+emoticons.emotes.threatening.desc=妳最好給我滾遠點
+
+emoticons.emotes.woah.title=Woah
+emoticons.emotes.woah.desc=TikTok 裏的梗
+
+emoticons.emotes.stick_bug.title=Stick Bug
+emoticons.emotes.stick_bug.desc=Get stick bugged lol
+
+emoticons.emotes.am_stuff.title=我是事(am_stuff)
+emoticons.emotes.am_stuff.desc=沒錯，我就是
+
+emoticons.emotes.slow_clap.title=緩慢拍手(slow_clap)
+emoticons.emotes.slow_clap.desc=/s
+
+emoticons.emotes.hell_yeah.title=我草太好了！(hell_yeah)
+emoticons.emotes.hell_yeah.desc=太好了，我的好兄弟
+
+emoticons.emotes.paranoid.title=疑神疑鬼(paranoid)
+emoticons.emotes.paranoid.desc=有人在監視我？
+
+emoticons.emotes.scared.title=恐懼(scared)
+emoticons.emotes.scared.desc=為什麽這裏有蛇！？
