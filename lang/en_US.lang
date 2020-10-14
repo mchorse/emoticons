@@ -39,8 +39,8 @@ emoticons.config.animations.tooltip=Emoticons' animation options
 
 emoticons.config.animations.disable=Disable non-emote animations
 emoticons.config.comments.animations.disable=Whether running, sneaking, swimming, flying, etc. animations should be shown?
-emoticons.config.animations.simple=Simple models
-emoticons.config.comments.animations.simple=Whether simple model (that has less geometry, and should be in theory faster) should be used instead of with smooth bends
+emoticons.config.animations.model_type=Model type
+emoticons.config.comments.animations.model_type=Default - it features bends, Simple - it has no bends and also contains less vertices (which theoretically makes it lighter on performance), Extruded - like Default, but it also has extruded bits for outer layers
 
 emoticons.config.player_preview.title=Player preview
 emoticons.config.player_preview.tooltip=The player preview in the corner options in the first person
@@ -65,6 +65,10 @@ emoticons.gui.enable_simple_models=Enable simpler models
 emoticons.player_preview.emote=Only emotes
 emoticons.player_preview.always=Always
 emoticons.player_preview.never=Never
+
+emoticons.player_model.default=Default
+emoticons.player_model.simple=Simple
+emoticons.player_model.extruded=Extruded
 
 # Emote dances
 emoticons.emotes.best_mates.title=Marlon's Exercise
@@ -242,3 +246,9 @@ emoticons.emotes.paranoid.desc=Somebody's watching me?
 
 emoticons.emotes.scared.title=Scared
 emoticons.emotes.scared.desc=Why did it have to be snakes!?
+
+emoticons.emotes.ragdoll_1.title=Ragdoll 1
+emoticons.emotes.ragdoll_1.desc=Lazy simulation #1
+
+emoticons.emotes.ragdoll_2.title=Ragdoll 2
+emoticons.emotes.ragdoll_2.desc=Lazy simulation #2
