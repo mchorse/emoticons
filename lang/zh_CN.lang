@@ -32,15 +32,15 @@ emoticons.config.general.title=常规
 emoticons.config.general.tooltip=Emoticons mod 常规选项
 
 emoticons.config.general.disable_sound_events=禁用声音事件
-emoticons.config.comments.general.disable_sound_events=声音事件是否不应该被注册 (对于需要启用可选 mod 兼容性的服务器很有用, 重启后生效)
+emoticons.config.comments.general.disable_sound_events=声音事件是否不应该被注册（对于需要启用可选 mod 兼容性的服务器很有用, 重启后生效）
 
 emoticons.config.animations.title=动画
 emoticons.config.animations.tooltip=Emoticons 动画选项
 
 emoticons.config.animations.disable=禁用非表情动画
 emoticons.config.comments.animations.disable=是否播放跑步、潜行、游泳、飞行等动画?
-emoticons.config.animations.simple=简化模型
-emoticons.config.comments.animations.simple=是否应用简化模型 (几何形状较少, 理论上可以更快) 来代替光滑的弯曲
+emoticons.config.animations.simple=模型类型
+emoticons.config.comments.animations.simple=默认 - 具有弯曲特性；简化 - 没有弯曲但几包含的顶点更少（理论上可以提示性能）；挤压 - 类似于默认，但同时包含了向外挤压的体素块
 
 emoticons.config.player_preview.title=玩家预览
 emoticons.config.player_preview.tooltip=在右上角显示的玩家第一人称效果预览
@@ -57,14 +57,18 @@ emoticons.config.comments.player_preview.y=玩家效果预览在 Y 轴的偏移
 # GUI
 emoticons.gui.title=表情
 emoticons.gui.search=搜索...
-emoticons.gui.emote=(表情 %s)
-emoticons.gui.total_emotes=(总数 %s)
+emoticons.gui.emote=（表情 %s）
+emoticons.gui.total_emotes=（总数 %s）
 emoticons.gui.disable_animations=禁用非表情动画
 emoticons.gui.enable_simple_models=启用简化模型
 
 emoticons.player_preview.emote=仅显示表情
 emoticons.player_preview.always=始终
 emoticons.player_preview.never=从不
+
+emoticons.player_model.default=默认
+emoticons.player_model.simple=简化
+emoticons.player_model.extruded=挤压
 
 # Emote dances
 emoticons.emotes.best_mates.title=Marlon 的锻炼(best_mates)
@@ -242,3 +246,9 @@ emoticons.emotes.paranoid.desc=有人在监视我？
 
 emoticons.emotes.scared.title=恐惧(scared)
 emoticons.emotes.scared.desc=为什么这里有蛇！？
+
+emoticons.emotes.ragdoll_1.title=布娃娃 1
+emoticons.emotes.ragdoll_1.desc=瘫倒在地模拟 #1
+
+emoticons.emotes.ragdoll_2.title=布娃娃 2
+emoticons.emotes.ragdoll_2.desc=瘫倒在地模拟 #2
