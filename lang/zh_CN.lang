@@ -40,7 +40,7 @@ emoticons.config.animations.tooltip=Emoticons 动画选项
 emoticons.config.animations.disable=禁用非表情动画
 emoticons.config.comments.animations.disable=是否播放跑步、潜行、游泳、飞行等动画?
 emoticons.config.animations.model_type=模型类型
-emoticons.config.comments.animations.model_type=默认 - 具有弯曲特性；简化 - 没有弯曲但几包含的顶点更少（理论上可以提示性能）；挤压 - 类似于默认，但同时包含了向外挤压的体素块
+emoticons.config.comments.animations.model_type=默认 - 具有弯曲特性；简化 - 没有弯曲但几包含的顶点更少（理论上可以提示性能）；挤压 - 简化+ - 和简化模型差不多，但它的特点是锐利的转角，而且更加美观
 
 emoticons.config.player_preview.title=玩家预览
 emoticons.config.player_preview.tooltip=在右上角显示的玩家第一人称效果预览
@@ -69,6 +69,7 @@ emoticons.player_preview.never=从不
 emoticons.player_model.default=默认
 emoticons.player_model.simple=简化
 emoticons.player_model.extruded=挤压
+emoticons.player_model.simple_plus=简化+
 
 # Emote dances
 emoticons.emotes.best_mates.title=Marlon 的锻炼(best_mates)
