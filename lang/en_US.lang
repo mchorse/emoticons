@@ -40,7 +40,7 @@ emoticons.config.animations.tooltip=Emoticons' animation options
 emoticons.config.animations.disable=Disable non-emote animations
 emoticons.config.comments.animations.disable=Whether running, sneaking, swimming, flying, etc. animations should be shown?
 emoticons.config.animations.model_type=Model type
-emoticons.config.comments.animations.model_type=Default - it features bends, Simple - it has no bends and also contains less vertices (which theoretically makes it lighter on performance), Extruded - like Default, but it also has extruded bits for outer layers
+emoticons.config.comments.animations.model_type=Default - it features bends, Simple - it has no bends and also contains less vertices (which theoretically makes it lighter on performance), Extruded - like Default, but it also has extruded bits for outer layers, Simple+ - like Simple, but it features sharp edges which look much nicer
 
 emoticons.config.player_preview.title=Player preview
 emoticons.config.player_preview.tooltip=The player preview in the corner options in the first person
@@ -69,6 +69,7 @@ emoticons.player_preview.never=Never
 emoticons.player_model.default=Default
 emoticons.player_model.simple=Simple
 emoticons.player_model.extruded=Extruded
+emoticons.player_model.simple_plus=Simple+
 
 # Emote dances
 emoticons.emotes.best_mates.title=Marlon's Exercise
