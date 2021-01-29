@@ -25,6 +25,9 @@ blockbuster.gui.record_editor.actions.fc_emote.desc=Это действие от
 # Config
 emoticons.config.title=Эмотиконс
 
+emoticons.config.reload=Перезагрузить анимации
+emoticons.config.open=Открыть пользовательскую папку
+
 emoticons.config.general.title=Общие
 emoticons.config.general.tooltip=Общие настройки Эмотиконс
 
@@ -62,6 +65,11 @@ emoticons.gui.enable_simple_models=Включить упрощённые мод�
 emoticons.player_preview.emote=Только при эмотиконах
 emoticons.player_preview.always=Всегда
 emoticons.player_preview.never=Никогда
+
+emoticons.player_model.default=Обычный
+emoticons.player_model.simple=Простой
+emoticons.player_model.extruded=Выдавленный
+emoticons.player_model.simple_plus=Простой+
 
 # Emote dances
 emoticons.emotes.best_mates.title=Упражнение Марлона
@@ -221,3 +229,27 @@ emoticons.emotes.threatening.desc=Держись от меня подальше
 
 emoticons.emotes.woah.title=Воу
 emoticons.emotes.woah.desc=Теперь тут есть мемы из ТикТока
+
+emoticons.emotes.stick_bug.title=Танцующий палочник
+emoticons.emotes.stick_bug.desc=Вас запалковали лел
+
+emoticons.emotes.am_stuff.title=Аз Есмь
+emoticons.emotes.am_stuff.desc=Да, это я
+
+emoticons.emotes.slow_clap.title=Медленные хлопки
+emoticons.emotes.slow_clap.desc=[сарказм]
+
+emoticons.emotes.hell_yeah.title=О да!
+emoticons.emotes.hell_yeah.desc=Погчамп
+
+emoticons.emotes.paranoid.title=Параноик
+emoticons.emotes.paranoid.desc=За мной кто-то наблюдает?
+
+emoticons.emotes.scared.title=Испуг
+emoticons.emotes.scared.desc=Ну почему это должны быть змеи!?
+
+emoticons.emotes.ragdoll_1.title=Рэгдолл 1
+emoticons.emotes.ragdoll_1.desc=Запечённая симуляция #1
+
+emoticons.emotes.ragdoll_2.title=Рэгдолл 2
+emoticons.emotes.ragdoll_2.desc=Запечённая симуляция #2
