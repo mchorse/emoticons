@@ -1,6 +1,7 @@
 {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/emoticons/",
     "1.12.2": {
+        "0.7": "This update features new Simple+ model type, and a couple of fixes.",
         "0.6.2": "This update is a small fix for Blockbuster.",
         "0.6.1": "A small update that doesn't do much.",
         "0.6": "This update adds 6 emotes, a couple of neat features like loading of custom emotes, extruded morphs and a placeholder morph option. It fixes minor performance issue with Emoticons morphs and server emote bug.",
@@ -17,7 +18,7 @@
         "0.1": "Initial release. It adds custom player animations and emote system, featuring over 25 emotes (custom and from Fortnite)."
     },
     "promos": {
-        "1.12.2-latest": "0.6.2",
-        "1.12.2-recommended": " 0.6.2"
+        "1.12.2-latest": "0.7",
+        "1.12.2-recommended": " 0.7"
     }
 }
