@@ -56,8 +56,6 @@ emoticons.gui.title=Емотікони
 emoticons.gui.search=Шукати...
 emoticons.gui.emote=(Емотікон %s)
 emoticons.gui.total_emotes=(Усього %s)
-emoticons.gui.disable_animations=Вимкнути анімації не-емотікони
-emoticons.gui.enable_simple_models=Вмикнути спрощені моделі
 
 emoticons.player_preview.emote=Тільки за емотіконів
 emoticons.player_preview.always=Завжди

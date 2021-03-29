@@ -59,8 +59,6 @@ emoticons.gui.title=表情
 emoticons.gui.search=搜索...
 emoticons.gui.emote=（表情 %s）
 emoticons.gui.total_emotes=（總數 %s）
-emoticons.gui.disable_animations=禁用非表情動畫
-emoticons.gui.enable_simple_models=啟用簡化模型
 
 emoticons.player_preview.emote=僅顯示表情
 emoticons.player_preview.always=始終
@@ -70,6 +68,38 @@ emoticons.player_model.default=默認
 emoticons.player_model.simple=簡化
 emoticons.player_model.extruded=擠壓
 emoticons.player_model.simple_plus=簡化+
+
+emoticons.gui.morph.general.title=General
+emoticons.gui.morph.general.create_pose=創建姿勢
+emoticons.gui.morph.general.reset_pose=重置姿勢
+emoticons.gui.morph.general.fixed=固定動作
+emoticons.gui.morph.general.animated=動畫姿勢
+emoticons.gui.morph.general.scale=全局縮放
+emoticons.gui.morph.general.scale_gui=GUI 縮放
+emoticons.gui.morph.general.scale_items=Items scale
+emoticons.gui.morph.general.render_items=Render items
+emoticons.gui.morph.general.name=Display name
+emoticons.gui.morph.general.head_bone=Head bone
+emoticons.gui.morph.general.placeholder_tooltip=This field allows to setup a placeholder morph, which will be used when Emoticons morph isn't emoting and Disable non-emote animation option enabled...
+emoticons.gui.morph.general.keys.pick_skin=選擇皮膚
+
+emoticons.gui.morph.actions.title=動作
+emoticons.gui.morph.actions.clamp=回卷
+emoticons.gui.morph.actions.reset=歸位
+emoticons.gui.morph.actions.speed=速度
+emoticons.gui.morph.actions.fade=緩入緩出
+emoticons.gui.morph.actions.tick=Tick
+emoticons.gui.morph.actions.action=動作
+
+emoticons.gui.morph.meshes.title=Meshes
+emoticons.gui.morph.meshes.pick_texture=Pick texture
+emoticons.gui.morph.meshes.linear=Linear
+emoticons.gui.morph.meshes.normals=Show normals
+emoticons.gui.morph.meshes.smooth=Smooth shading
+emoticons.gui.morph.meshes.visible=Visible
+emoticons.gui.morph.meshes.lighting=Lighting
+emoticons.gui.morph.meshes.texture=Texture
+emoticons.gui.morph.meshes.color=Color
 
 # Emote dances
 emoticons.emotes.best_mates.title=Marlon 的鍛煉(best_mates)

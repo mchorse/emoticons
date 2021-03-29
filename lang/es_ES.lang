@@ -24,8 +24,6 @@ emoticons.gui.title=Emoticonos
 emoticons.gui.search=Buscando...
 emoticons.gui.emote=(Emoticono %s)
 emoticons.gui.total_emotes=(total %s)
-emoticons.gui.disable_animations=Deshabilitar animaciones que no sean emoticonos
-emoticons.gui.enable_simple_models=Habilitar modelos más simples
 
 # Emoticono dances
 emoticons.emotes.best_mates.title=Marlon's Exercise
