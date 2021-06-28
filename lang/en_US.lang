@@ -11,6 +11,7 @@ emoticons.keys.emote5=Emote 5
 emoticons.keys.emote6=Emote 6
 emoticons.keys.emotes=Configure emotes
 emoticons.keys.stop_emote=Stop emote
+emoticons.keys.reload_emotes=Reload emotes
 
 morph.section.emoticons=Emoticons
 morph.category.emoticons=Models
@@ -85,6 +86,7 @@ emoticons.gui.morph.general.name=Display name
 emoticons.gui.morph.general.head_bone=Head bone
 emoticons.gui.morph.general.placeholder_tooltip=This field allows to setup a placeholder morph, which will be used when Emoticons morph isn't emoting and Disable non-emote animation option enabled...
 emoticons.gui.morph.general.keys.pick_skin=Pick skin
+emoticons.gui.morph.general.context.copy_emote=Copy emote configuration
 
 emoticons.gui.morph.actions.title=Actions
 emoticons.gui.morph.actions.clamp=Clamp
@@ -281,8 +283,20 @@ emoticons.emotes.paranoid.desc=Somebody's watching me?
 emoticons.emotes.scared.title=Scared
 emoticons.emotes.scared.desc=Why did it have to be snakes!?
 
+emoticons.emotes.tada.title=Tada!
+emoticons.emotes.tada.desc=There it is!
+
+emoticons.emotes.smug_dance.title=Smug Dance
+emoticons.emotes.smug_dance.desc=Just like the hat kid did it
+
+emoticons.emotes.nope.title=Nope!
+emoticons.emotes.nope.desc=Not good, just nope!
+
 emoticons.emotes.ragdoll_1.title=Ragdoll 1
 emoticons.emotes.ragdoll_1.desc=Lazy simulation #1
 
 emoticons.emotes.ragdoll_2.title=Ragdoll 2
 emoticons.emotes.ragdoll_2.desc=Lazy simulation #2
+
+emoticons.emotes.ragdoll_3.title=Ragdoll 3
+emoticons.emotes.ragdoll_3.desc=Lazy simulation #3
