@@ -11,6 +11,7 @@ emoticons.keys.emote5=表情 5
 emoticons.keys.emote6=表情 6
 emoticons.keys.emotes=配置表情
 emoticons.keys.stop_emote=停止表情
+emoticons.keys.reload_emotes=重載表情
 
 morph.section.emoticons=Emoticons
 morph.category.emoticons=模型
@@ -20,7 +21,7 @@ emoticons.commands.emote.help=表情命令。客戶端執行命令可更改您�
 
 # Blockbuster integration
 blockbuster.gui.record_editor.actions.fc_emote.title=Emoticons 表情
-blockbuster.gui.record_editor.actions.fc_emote.desc=該動作負責激活壹個 Emoticons 表情。僅對使用玩家偽裝或完全不使用偽裝的假玩家演員有效！
+blockbuster.gui.record_editor.actions.fc_emote.desc=該動作負責激活一個 Emoticons 表情。僅對使用玩家偽裝或完全不使用偽裝的假玩家演員有效！
 
 # Config
 emoticons.config.title=Emoticons
@@ -43,7 +44,7 @@ emoticons.config.animations.model_type=模型類型
 emoticons.config.comments.animations.model_type=默認 - 具有彎曲特性；簡化 - 沒有彎曲但幾包含的頂點更少（理論上可以提示性能）；擠壓 - 簡化+ - 和簡化模型差不多，但它的特點是銳利的轉角，而且更加美觀
 
 emoticons.config.player_preview.title=玩家預覽
-emoticons.config.player_preview.tooltip=在右上角顯示的玩家第壹人稱效果預覽
+emoticons.config.player_preview.tooltip=在右上角顯示的玩家第一人稱效果預覽
 
 emoticons.config.player_preview.mode=預覽模式
 emoticons.config.comments.player_preview.mode=設置合適顯示效果預覽，盡玩家作出表情時顯示 / 始終顯示 / 始終不顯示
@@ -60,6 +61,9 @@ emoticons.gui.search=搜索...
 emoticons.gui.emote=（表情 %s）
 emoticons.gui.total_emotes=（總數 %s）
 
+emoticons.gui.editor.context.copy=拷貝姿勢
+emoticons.gui.editor.context.paste=粘貼姿勢
+
 emoticons.player_preview.emote=僅顯示表情
 emoticons.player_preview.always=始終
 emoticons.player_preview.never=從不
@@ -69,19 +73,20 @@ emoticons.player_model.simple=簡化
 emoticons.player_model.extruded=擠壓
 emoticons.player_model.simple_plus=簡化+
 
-emoticons.gui.morph.general.title=General
+emoticons.gui.morph.general.title=常規
 emoticons.gui.morph.general.create_pose=創建姿勢
 emoticons.gui.morph.general.reset_pose=重置姿勢
 emoticons.gui.morph.general.fixed=固定動作
 emoticons.gui.morph.general.animated=動畫姿勢
 emoticons.gui.morph.general.scale=全局縮放
 emoticons.gui.morph.general.scale_gui=GUI 縮放
-emoticons.gui.morph.general.scale_items=Items scale
-emoticons.gui.morph.general.render_items=Render items
-emoticons.gui.morph.general.name=Display name
-emoticons.gui.morph.general.head_bone=Head bone
-emoticons.gui.morph.general.placeholder_tooltip=This field allows to setup a placeholder morph, which will be used when Emoticons morph isn't emoting and Disable non-emote animation option enabled...
+emoticons.gui.morph.general.scale_items=物品縮放
+emoticons.gui.morph.general.render_items=渲染物品
+emoticons.gui.morph.general.name=顯示名稱
+emoticons.gui.morph.general.head_bone=頭部骨骼
+emoticons.gui.morph.general.placeholder_tooltip=該參數用於設置一個占位符偽裝，當 Emoticons 偽裝沒有播放表情，並禁用了“啟用非表情動畫”選項啟用時，它將被使用...
 emoticons.gui.morph.general.keys.pick_skin=選擇皮膚
+emoticons.gui.morph.general.context.copy_emote=拷貝表情配置
 
 emoticons.gui.morph.actions.title=動作
 emoticons.gui.morph.actions.clamp=回卷
@@ -91,34 +96,34 @@ emoticons.gui.morph.actions.fade=緩入緩出
 emoticons.gui.morph.actions.tick=Tick
 emoticons.gui.morph.actions.action=動作
 
-emoticons.gui.morph.meshes.title=Meshes
-emoticons.gui.morph.meshes.pick_texture=Pick texture
-emoticons.gui.morph.meshes.linear=Linear
-emoticons.gui.morph.meshes.normals=Show normals
-emoticons.gui.morph.meshes.smooth=Smooth shading
-emoticons.gui.morph.meshes.visible=Visible
-emoticons.gui.morph.meshes.lighting=Lighting
-emoticons.gui.morph.meshes.texture=Texture
-emoticons.gui.morph.meshes.color=Color
+emoticons.gui.morph.meshes.title=材質
+emoticons.gui.morph.meshes.pick_texture=選取材質
+emoticons.gui.morph.meshes.linear=線性
+emoticons.gui.morph.meshes.normals=顯示法線
+emoticons.gui.morph.meshes.smooth=平滑陰影
+emoticons.gui.morph.meshes.visible=可見
+emoticons.gui.morph.meshes.lighting=發光
+emoticons.gui.morph.meshes.texture=材質
+emoticons.gui.morph.meshes.color=顏色
 
 # Emote dances
 emoticons.emotes.best_mates.title=Marlon 的鍛煉(best_mates)
 emoticons.emotes.best_mates.desc=來源於 Marlon Webb 的精彩整活小視頻! Take on me~
 
 emoticons.emotes.default.title=舞步(default)
-emoticons.emotes.default.desc=在沙盒遊戲裏盡情釋放妳的舞技
+emoticons.emotes.default.desc=在沙盒遊戲裏盡情釋放你的舞技
 
 emoticons.emotes.disco_fever.title=狂熱 Disco(disco_fever)
 emoticons.emotes.disco_fever.desc=燃燒吧 baby，燃燒吧！
 
 emoticons.emotes.electro_shuffle.title=電曳步舞(electro_shuffle)
-emoticons.emotes.electro_shuffle.desc=帶上妳的小毛驢兒，我們的下壹站是 Hardbass 鎮
+emoticons.emotes.electro_shuffle.desc=帶上你的小毛驢兒，我們的下一站是 Hardbass 鎮
 
 emoticons.emotes.floss.title=牙線舞(floss)
-emoticons.emotes.floss.desc=看我給妳整個活！
+emoticons.emotes.floss.desc=看我給你整個活！
 
 emoticons.emotes.hype.title=嗨起來(hype)
-emoticons.emotes.hype.desc=壹起嗨起來吧
+emoticons.emotes.hype.desc=一起嗨起來吧
 
 emoticons.emotes.infinite_dab.title=無限 Dab(infinite_dab)
 emoticons.emotes.infinite_dab.desc=停不下來，根本停不下來
@@ -130,7 +135,7 @@ emoticons.emotes.star_power.title=明星效應(star_power)
 emoticons.emotes.star_power.desc=不給簽名哦
 
 emoticons.emotes.tidy.title=Tidy
-emoticons.emotes.tidy.desc=像手裏有燙手的煙頭壹樣丟掉！
+emoticons.emotes.tidy.desc=像手裏有燙手的煙頭一樣丟掉！
 
 emoticons.emotes.fresh.title=新鮮(fresh)
 emoticons.emotes.fresh.desc=...就像《新鮮王子妙事多》裏的那樣
@@ -157,7 +162,7 @@ emoticons.emotes.shimmer.title=閃光舞(shimmer)
 emoticons.emotes.shimmer.desc=近乎過分的無禮
 
 emoticons.emotes.get_funky.title=放克的感覺(get_funky)
-emoticons.emotes.get_funky.desc=找到妳的最佳狀態
+emoticons.emotes.get_funky.desc=找到你的最佳狀態
 
 # Just emotes
 emoticons.emotes.boy.title=我去(boy)
@@ -170,13 +175,13 @@ emoticons.emotes.confused.title=疑惑(confused)
 emoticons.emotes.confused.desc=說真的，這是啥情況啊？
 
 emoticons.emotes.dab.title=Dab
-emoticons.emotes.dab.desc=對妳們這些巨魔我的姿勢就只有 Dab
+emoticons.emotes.dab.desc=對你們這些巨魔我的姿勢就只有 Dab
 
 emoticons.emotes.facepalm.title=捂臉(facepalm)
 emoticons.emotes.facepalm.desc=這世上居然能有人做到這種事?...
 
 emoticons.emotes.popcorn.title=爆米花(popcorn)
-emoticons.emotes.popcorn.desc=我是壹般通過觀眾
+emoticons.emotes.popcorn.desc=我是一般通過觀眾
 
 emoticons.emotes.pure_salt.title=純粹的鹽(pure_salt)
 emoticons.emotes.pure_salt.desc=像撒鹽哥那樣把鹽灑在牛肉上
@@ -200,10 +205,10 @@ emoticons.emotes.no.title=不(no)
 emoticons.emotes.no.desc=不
 
 emoticons.emotes.clapping.title=鼓掌(clapping)
-emoticons.emotes.clapping.desc=恭喜妳，我的好朋友！
+emoticons.emotes.clapping.desc=恭喜你，我的好朋友！
 
 emoticons.emotes.calculated.title=比劃(calculated)
-emoticons.emotes.calculated.desc=如果妳什麽工具都沒有，就不能直接往下挖
+emoticons.emotes.calculated.desc=如果你什麽工具都沒有，就不能直接往下挖
 
 emoticons.emotes.bow.title=鞠躬(bow)
 emoticons.emotes.bow.desc="請多指教！"
@@ -223,8 +228,8 @@ emoticons.emotes.rock_paper_scissors.desc=剪刀，石頭，布！
 emoticons.emotes.fist.title=握緊拳頭(fist)
 emoticons.emotes.fist.desc="硬了！拳頭硬了！"
 
-emoticons.emotes.pointing.title=向前壹指(pointing)
-emoticons.emotes.pointing.desc=沒錯，就是妳
+emoticons.emotes.pointing.title=向前一指(pointing)
+emoticons.emotes.pointing.desc=沒錯，就是你
 
 emoticons.emotes.twerk.title=電臀舞(twerk)
 emoticons.emotes.twerk.desc=搖起來！
@@ -255,10 +260,10 @@ emoticons.emotes.sneeze.title=打噴嚏(sneeze)
 emoticons.emotes.sneeze.desc=大吉大利！
 
 emoticons.emotes.threatening.title=威脅(threatening)
-emoticons.emotes.threatening.desc=妳最好給我滾遠點
+emoticons.emotes.threatening.desc=你最好給我滾遠點
 
 emoticons.emotes.woah.title=Woah
-emoticons.emotes.woah.desc=TikTok 裏的梗
+emoticons.emotes.woah.desc=抖音裏的梗
 
 emoticons.emotes.stick_bug.title=Stick Bug
 emoticons.emotes.stick_bug.desc=Get stick bugged lol
@@ -278,8 +283,20 @@ emoticons.emotes.paranoid.desc=有人在監視我？
 emoticons.emotes.scared.title=恐懼(scared)
 emoticons.emotes.scared.desc=為什麽這裏有蛇！？
 
+emoticons.emotes.tada.title=鐺鐺！(tada)
+emoticons.emotes.tada.desc=隆重介紹！
+
+emoticons.emotes.smug_dance.title=得意之舞
+emoticons.emotes.smug_dance.desc=就像那個戴帽子的孩子所做的那樣
+
+emoticons.emotes.nope.title=不行！
+emoticons.emotes.nope.desc=打咩打內，打咩喲，打咩那諾喲
+
 emoticons.emotes.ragdoll_1.title=布娃娃 1
 emoticons.emotes.ragdoll_1.desc=癱倒在地模擬 #1
 
 emoticons.emotes.ragdoll_2.title=布娃娃 2
 emoticons.emotes.ragdoll_2.desc=癱倒在地模擬 #2
+
+emoticons.emotes.ragdoll_3.title=布娃娃 3
+emoticons.emotes.ragdoll_3.desc=癱倒在地模擬 #3
