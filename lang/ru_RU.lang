@@ -1,5 +1,6 @@
 #PARSE_ESCAPES
-# Локализацию запилил Andruxioid, ёбанарот.
+emoticons.translation.credit=Локализацию запилил Andruxioid, ёбанарот.
+
 # GUI and other stuff
 emoticons.keys.category=Эмотиконы
 emoticons.keys.random=Случайный эмотикон
@@ -11,6 +12,7 @@ emoticons.keys.emote5=Эмотикон 5
 emoticons.keys.emote6=Эмотикон 6
 emoticons.keys.emotes=Настроить эмотиконы
 emoticons.keys.stop_emote=Остановить эмотикон
+emoticons.keys.reload_emotes=Reload emotes
 
 morph.section.emoticons=Эмотиконс
 morph.category.emoticons=Модели
@@ -60,6 +62,9 @@ emoticons.gui.search=Искать...
 emoticons.gui.emote=(Эмотикон %s)
 emoticons.gui.total_emotes=(Всего %s)
 
+emoticons.gui.editor.context.copy=Copy pose
+emoticons.gui.editor.context.paste=Paste pose
+
 emoticons.player_preview.emote=Только при эмотиконах
 emoticons.player_preview.always=Всегда
 emoticons.player_preview.never=Никогда
@@ -82,6 +87,7 @@ emoticons.gui.morph.general.name=Display name
 emoticons.gui.morph.general.head_bone=Head bone
 emoticons.gui.morph.general.placeholder_tooltip=This field allows to setup a placeholder morph, which will be used when Emoticons morph isn't emoting and Disable non-emote animation option enabled...
 emoticons.gui.morph.general.keys.pick_skin=Выбрать скин
+emoticons.gui.morph.general.context.copy_emote=Copy emote configuration
 
 emoticons.gui.morph.actions.title=Действия
 emoticons.gui.morph.actions.clamp=Закольцовывание
@@ -232,7 +238,7 @@ emoticons.emotes.twerk.desc=Тряси дниной, ёлы-палы!
 emoticons.emotes.club.title=Клубняк
 emoticons.emotes.club.desc=Бумц бумц бумц бумц.
 
-# Emotes 2020, в 2020-м году был такой пиздец, что в эмотиконс пришли мемы из тиктока.
+# Emotes 2020
 emoticons.emotes.bitchslap.title=Шлёп
 emoticons.emotes.bitchslap.desc=*шлёп*
 
@@ -278,8 +284,20 @@ emoticons.emotes.paranoid.desc=За мной кто-то наблюдает?
 emoticons.emotes.scared.title=Испуг
 emoticons.emotes.scared.desc=Ну почему это должны быть змеи!?
 
+emoticons.emotes.tada.title=Tada!
+emoticons.emotes.tada.desc=There it is!
+
+emoticons.emotes.smug_dance.title=Smug Dance
+emoticons.emotes.smug_dance.desc=Just like the hat kid did it
+
+emoticons.emotes.nope.title=Nope!
+emoticons.emotes.nope.desc=Not good, just nope!
+
 emoticons.emotes.ragdoll_1.title=Рэгдолл 1
 emoticons.emotes.ragdoll_1.desc=Запечённая симуляция #1
 
 emoticons.emotes.ragdoll_2.title=Рэгдолл 2
 emoticons.emotes.ragdoll_2.desc=Запечённая симуляция #2
+
+emoticons.emotes.ragdoll_3.title=Ragdoll 3
+emoticons.emotes.ragdoll_3.desc=Lazy simulation #3

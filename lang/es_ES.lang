@@ -1,4 +1,5 @@
 #PARSE_ESCAPES
+emoticons.translation.credit=McHorse
 
 # GUI and other stuff
 emoticons.keys.category=Emoticonos y emociones
@@ -11,6 +12,10 @@ emoticons.keys.emote5=Emoticono 5
 emoticons.keys.emote6=Emoticono 6
 emoticons.keys.emotes=Configurar emoticonos
 emoticons.keys.stop_emote=Parar emoticono
+emoticons.keys.reload_emotes=Reload emotes
+
+morph.section.emoticons=Emoticons
+morph.category.emoticons=Models
 
 # Commands
 emoticons.commands.emote.help=Comandos de Emoticono. Comando del lado del cliente para cambiar su propio emoticono. Este comando admite la finalización de pestañas.\n/emote [emote_name]
@@ -19,13 +24,90 @@ emoticons.commands.emote.help=Comandos de Emoticono. Comando del lado del client
 blockbuster.gui.record_editor.actions.fc_emote.title=Emoticonos y emociones
 blockbuster.gui.record_editor.actions.fc_emote.desc=Esta acción es responsable de activar un emoticono de Emociones. ¡Funciona solo con actores de jugadores falsos que usan morfos de jugador o ningún morfo!
 
+# Config
+emoticons.config.title=Emoticons
+
+emoticons.config.reload=Reload animations
+emoticons.config.open=Open user folder
+
+emoticons.config.general.title=General
+emoticons.config.general.tooltip=General options of Emoticons' mod
+
+emoticons.config.general.disable_sound_events=Disable sound events
+emoticons.config.comments.general.disable_sound_events=Whether sound events should not be registered (useful for servers who want to enable optional mod compatibility, requires RESTART)
+
+emoticons.config.animations.title=Animations
+emoticons.config.animations.tooltip=Emoticons' animation options
+
+emoticons.config.animations.disable=Disable non-emote animations
+emoticons.config.comments.animations.disable=Whether running, sneaking, swimming, flying, etc. animations should be shown?
+emoticons.config.animations.model_type=Model type
+emoticons.config.comments.animations.model_type=Default - it features bends, Simple - it has no bends and also contains less vertices (which theoretically makes it lighter on performance), Extruded - like Default, but it also has extruded bits for outer layers, Simple+ - like Simple, but it features sharp edges which look much nicer
+
+emoticons.config.player_preview.title=Player preview
+emoticons.config.player_preview.tooltip=The player preview in the corner options in the first person
+
+emoticons.config.player_preview.mode=Preview mode
+emoticons.config.comments.player_preview.mode=Determines when preview gets shown, either only when player emotes, always, or never
+emoticons.config.player_preview.scale=Scale
+emoticons.config.comments.player_preview.scale=Scale of the character in the preview
+emoticons.config.player_preview.x=X shift
+emoticons.config.comments.player_preview.x=X shift of the player preview
+emoticons.config.player_preview.y=Y shift
+emoticons.config.comments.player_preview.y=Y shift of the player preview
+
 # GUI
 emoticons.gui.title=Emoticonos
 emoticons.gui.search=Buscando...
 emoticons.gui.emote=(Emoticono %s)
 emoticons.gui.total_emotes=(total %s)
 
-# Emoticono dances
+emoticons.gui.editor.context.copy=Copy pose
+emoticons.gui.editor.context.paste=Paste pose
+
+emoticons.player_preview.emote=Only emotes
+emoticons.player_preview.always=Always
+emoticons.player_preview.never=Never
+
+emoticons.player_model.default=Default
+emoticons.player_model.simple=Simple
+emoticons.player_model.extruded=Extruded
+emoticons.player_model.simple_plus=Simple+
+
+emoticons.gui.morph.general.title=General
+emoticons.gui.morph.general.create_pose=Create pose
+emoticons.gui.morph.general.reset_pose=Reset pose
+emoticons.gui.morph.general.fixed=Fixate movement
+emoticons.gui.morph.general.animated=Animated pose
+emoticons.gui.morph.general.scale=Scale
+emoticons.gui.morph.general.scale_gui=GUI scale
+emoticons.gui.morph.general.scale_items=Items scale
+emoticons.gui.morph.general.render_items=Render items
+emoticons.gui.morph.general.name=Display name
+emoticons.gui.morph.general.head_bone=Head bone
+emoticons.gui.morph.general.placeholder_tooltip=This field allows to setup a placeholder morph, which will be used when Emoticons morph isn't emoting and Disable non-emote animation option enabled...
+emoticons.gui.morph.general.keys.pick_skin=Pick skin
+emoticons.gui.morph.general.context.copy_emote=Copy emote configuration
+
+emoticons.gui.morph.actions.title=Actions
+emoticons.gui.morph.actions.clamp=Clamp
+emoticons.gui.morph.actions.reset=Reset
+emoticons.gui.morph.actions.speed=Speed
+emoticons.gui.morph.actions.fade=Fade
+emoticons.gui.morph.actions.tick=Tick
+emoticons.gui.morph.actions.action=Action
+
+emoticons.gui.morph.meshes.title=Meshes
+emoticons.gui.morph.meshes.pick_texture=Pick texture
+emoticons.gui.morph.meshes.linear=Linear
+emoticons.gui.morph.meshes.normals=Show normals
+emoticons.gui.morph.meshes.smooth=Smooth shading
+emoticons.gui.morph.meshes.visible=Visible
+emoticons.gui.morph.meshes.lighting=Lighting
+emoticons.gui.morph.meshes.texture=Texture
+emoticons.gui.morph.meshes.color=Color
+
+# Emote dances
 emoticons.emotes.best_mates.title=Marlon's Exercise
 emoticons.emotes.best_mates.desc=¡El crédito va a Marlon Webb por sus increíbles vines!
 
@@ -83,7 +165,7 @@ emoticons.emotes.shimmer.desc=Bordeando niveles excesivos de sass.
 emoticons.emotes.get_funky.title=Get funky
 emoticons.emotes.get_funky.desc=Encuentra tu ritmo.
 
-# Just emoticonos
+# Just emotes
 emoticons.emotes.boy.title=Boy
 emoticons.emotes.boy.desc=¿Qué son esos...?
 
@@ -156,7 +238,7 @@ emoticons.emotes.twerk.desc=¡Mueve ese culo!
 emoticons.emotes.club.title=Clubbing
 emoticons.emotes.club.desc=Pum pum pum pum.
 
-# Emoticonos 2020
+# Emotes 2020
 emoticons.emotes.bitchslap.title=Slap
 emoticons.emotes.bitchslap.desc=*slaps*
 
@@ -183,3 +265,39 @@ emoticons.emotes.threatening.desc=Será mejor que te mantengas alejado de mí
 
 emoticons.emotes.woah.title=Woah
 emoticons.emotes.woah.desc=Toma ese meme de TikTok
+
+emoticons.emotes.stick_bug.title=Stick Bug
+emoticons.emotes.stick_bug.desc=Get stick bugged lol
+
+emoticons.emotes.am_stuff.title=Am Stuff
+emoticons.emotes.am_stuff.desc=Yes, it's me
+
+emoticons.emotes.slow_clap.title=Slow Clap
+emoticons.emotes.slow_clap.desc=/s
+
+emoticons.emotes.hell_yeah.title=Hell, Yeah!
+emoticons.emotes.hell_yeah.desc=Poggers, bro
+
+emoticons.emotes.paranoid.title=Paranoid
+emoticons.emotes.paranoid.desc=Somebody's watching me?
+
+emoticons.emotes.scared.title=Scared
+emoticons.emotes.scared.desc=Why did it have to be snakes!?
+
+emoticons.emotes.tada.title=Tada!
+emoticons.emotes.tada.desc=There it is!
+
+emoticons.emotes.smug_dance.title=Smug Dance
+emoticons.emotes.smug_dance.desc=Just like the hat kid did it
+
+emoticons.emotes.nope.title=Nope!
+emoticons.emotes.nope.desc=Not good, just nope!
+
+emoticons.emotes.ragdoll_1.title=Ragdoll 1
+emoticons.emotes.ragdoll_1.desc=Lazy simulation #1
+
+emoticons.emotes.ragdoll_2.title=Ragdoll 2
+emoticons.emotes.ragdoll_2.desc=Lazy simulation #2
+
+emoticons.emotes.ragdoll_3.title=Ragdoll 3
+emoticons.emotes.ragdoll_3.desc=Lazy simulation #3
