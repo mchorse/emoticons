@@ -1,0 +1,50 @@
+{
+    "best_mates": {
+        "sounds": [ "emoticons:best_mates" ]
+    },
+    "boneless": {
+        "sounds": [ "emoticons:boneless" ]
+    },
+    "default": {
+        "sounds": [ "emoticons:default" ]
+    },
+    "disco_fever": {
+        "sounds": [ "emoticons:disco_fever" ]
+    },
+    "electro_shuffle": {
+        "sounds": [ "emoticons:electro_shuffle" ]
+    },
+    "floss": {
+        "sounds": [ "emoticons:floss" ]
+    },
+    "fresh": {
+        "sounds": [ "emoticons:fresh" ]
+    },
+    "gangnam_style": {
+        "sounds": [ "emoticons:gangnam_style" ]
+    },
+    "hype": {
+        "sounds": [ "emoticons:hype" ]
+    },
+    "infinite_dab": {
+        "sounds": [ "emoticons:infinite_dab" ]
+    },
+    "orange_justice": {
+        "sounds": [ "emoticons:orange_justice" ]
+    },
+    "skibidi": {
+        "sounds": [ "emoticons:skibidi" ]
+    },
+    "squat_kick": {
+        "sounds": [ "emoticons:squat_kick" ]
+    },
+    "star_power": {
+        "sounds": [ "emoticons:star_power" ]
+    },
+    "take_the_l": {
+        "sounds": [ "emoticons:take_the_l" ]
+    },
+    "tidy": {
+        "sounds": [ "emoticons:tidy" ]
+    }
+}

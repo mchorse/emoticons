@@ -1,0 +1,52 @@
+{
+    "name": "Alex",
+    "primaryMesh": "body",
+    "scale": 0.9375,
+    "scaleItems": 1,
+    "scaleGui": 0.9375,
+    "renderHeldItems": true,
+    "leftHands": {
+        "low_left_arm.end": {
+            "rx": -90,
+            "ry": 180,
+            "z": -0.1,
+            "y": 0.1
+        }
+    },
+    "rightHands": {
+        "low_right_arm.end": {
+            "rx": -90,
+            "ry": 180,
+            "z": -0.1,
+            "y": 0.1
+        }
+    },
+    "head": "head",
+    "meshes": {
+        "body": {
+            "normals": true,
+            "texture": "minecraft:textures/entity/alex.png"
+        },
+        "armor_helmet": {
+        	"visible": false,
+        	"normals": true
+        },
+        "armor_chest": {
+        	"visible": false,
+        	"normals": true
+        },
+        "armor_leggings": {
+        	"visible": false,
+        	"normals": true
+        },
+        "armor_feet": {
+        	"visible": false,
+        	"normals": true
+        },
+        "popcorn": {
+            "visible": false,
+            "normals": true,
+            "texture": "emoticons:textures/popcorn.png"
+        }
+    }
+}

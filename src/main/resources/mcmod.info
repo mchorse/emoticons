@@ -1,0 +1,16 @@
+[
+    {
+        "modid": "emoticons",
+        "name": "Emoticons",
+        "description": "Custom player animation with bends and emotes",
+        "version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "https://mchorse.github.io/emoticons/",
+        "updateUrl": "https://raw.githubusercontent.com/mchorse/emoticons/master/version.json",
+        "authorList": ["mchorse"],
+        "credits": "Andruxioid for testing, giving ideas and Russian translation!",
+        "logoFile": "",
+        "screenshots": [],
+        "dependencies": []
+    }
+]
