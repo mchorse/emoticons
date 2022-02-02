@@ -35,17 +35,18 @@ public class GuiAnimatedModelRenderer extends GuiModelRenderer
     @Override
     protected void drawUserModel(GuiContext context)
     {
-        float headYaw = this.yaw;
+        float headYaw = this.yaw - (this.customEntity ? this.entityYawBody : 0);
         float headPitch = this.pitch;
 
         if (!this.looking)
         {
-            headYaw = headPitch = 0;
+            headYaw = this.customEntity ? this.entityYawHead : 0;
+            headPitch = this.customEntity ? this.entityPitch : 0;
         }
 
         if (this.controller != null)
         {
-            this.entity.rotationYaw = this.entity.prevRotationYaw = headYaw;
+            this.entity.rotationYaw = this.entity.prevRotationYaw = this.customEntity ? this.entityYawBody : headYaw;
             this.entity.rotationYawHead = this.entity.prevRotationYawHead = headYaw;
             this.entity.rotationPitch = this.entity.prevRotationPitch = headPitch;
 
@@ -68,6 +69,7 @@ public class GuiAnimatedModelRenderer extends GuiModelRenderer
 
                 GlStateManager.pushMatrix();
                 GlStateManager.scale(scale, scale, scale);
+                GlStateManager.rotate(this.customEntity ? -this.entityYawBody : 0, 0, 1, 0);
 
                 for (BOBJBone bone : armature.orderedBones)
                 {
@@ -98,6 +100,7 @@ public class GuiAnimatedModelRenderer extends GuiModelRenderer
         GlStateManager.disableDepth();
         GlStateManager.pushMatrix();
         GlStateManager.scale(scale, scale, scale);
+        GlStateManager.rotate(this.customEntity ? -this.entityYawBody : 0, 0, 1, 0);
 
         List<BOBJBone> bones = armature.orderedBones;
 
