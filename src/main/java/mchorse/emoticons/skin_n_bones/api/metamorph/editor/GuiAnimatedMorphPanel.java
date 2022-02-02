@@ -95,7 +95,7 @@ public class GuiAnimatedMorphPanel extends GuiMorphPanel<AnimatedMorph, GuiAnima
         this.bones.flex().relative(this.createPose).y(1F, 5).w(1F).hTo(this.fixed.flex(), -5);
         this.animated.flex().relative(this).x(10).y(1F, -10).w(110).anchorY(1);
         this.fixed.flex().relative(this.animated).y(-1F, -5).w(1F);
-        this.transforms.flex().relative(this).set(0, 0, 190, 70).x(0.5F, -95).y(1, -80);
+        this.transforms.flex().relative(this).set(0, 0, 256, 70).x(0.5F, -128).y(1, -80);
 
         this.add(this.createPose, this.animated, this.fixed, this.bones, this.transforms);
 
