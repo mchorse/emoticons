@@ -8,6 +8,7 @@ import javax.vecmath.Vector3f;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -52,7 +53,7 @@ public class BOBJLoader
 
         try
         {
-            BufferedReader br = new BufferedReader(new InputStreamReader(stream));
+            BufferedReader br = new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8));
             String line;
 
             while ((line = br.readLine()) != null)

@@ -27,6 +27,7 @@ import org.apache.commons.io.IOUtils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -225,10 +226,10 @@ public class ClientProxy extends CommonProxy
             manager.animations.put("default_simple_plus", new AnimationEntry(steveSimplePlus, configFolder, 1));
             manager.animations.put("slim_simple_plus", new AnimationEntry(alexSimplePlus, configFolder, 1));
 
-            AnimatorConfig steveConfig = manager.gson.fromJson(IOUtils.toString(loader.getResourceAsStream("/assets/emoticons/models/entity/default.json"), Charset.defaultCharset()), AnimatorConfig.class);
-            AnimatorConfig alexConfig = manager.gson.fromJson(IOUtils.toString(loader.getResourceAsStream("/assets/emoticons/models/entity/slim.json"), Charset.defaultCharset()), AnimatorConfig.class);
-            AnimatorConfig steveSimpleConfig = manager.gson.fromJson(IOUtils.toString(loader.getResourceAsStream("/assets/emoticons/models/entity/default_simple.json"), Charset.defaultCharset()), AnimatorConfig.class);
-            AnimatorConfig alexSimpleConfig = manager.gson.fromJson(IOUtils.toString(loader.getResourceAsStream("/assets/emoticons/models/entity/slim_simple.json"), Charset.defaultCharset()), AnimatorConfig.class);
+            AnimatorConfig steveConfig = manager.gson.fromJson(IOUtils.toString(loader.getResourceAsStream("/assets/emoticons/models/entity/default.json"), StandardCharsets.UTF_8), AnimatorConfig.class);
+            AnimatorConfig alexConfig = manager.gson.fromJson(IOUtils.toString(loader.getResourceAsStream("/assets/emoticons/models/entity/slim.json"), StandardCharsets.UTF_8), AnimatorConfig.class);
+            AnimatorConfig steveSimpleConfig = manager.gson.fromJson(IOUtils.toString(loader.getResourceAsStream("/assets/emoticons/models/entity/default_simple.json"), StandardCharsets.UTF_8), AnimatorConfig.class);
+            AnimatorConfig alexSimpleConfig = manager.gson.fromJson(IOUtils.toString(loader.getResourceAsStream("/assets/emoticons/models/entity/slim_simple.json"), StandardCharsets.UTF_8), AnimatorConfig.class);
 
             manager.configs.put("default", new AnimatorConfigEntry(steveConfig, 1));
             manager.configs.put("default_3d", new AnimatorConfigEntry(steveConfig, 1));
