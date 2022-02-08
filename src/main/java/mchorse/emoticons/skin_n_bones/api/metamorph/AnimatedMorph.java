@@ -1,10 +1,14 @@
 package mchorse.emoticons.skin_n_bones.api.metamorph;
 
 import com.google.common.base.Objects;
+
+import mchorse.emoticons.skin_n_bones.api.animation.AnimationMesh;
+import mchorse.emoticons.skin_n_bones.api.bobj.BOBJArmature;
 import mchorse.metamorph.api.models.IMorphProvider;
 import mchorse.metamorph.api.morphs.AbstractMorph;
 import mchorse.metamorph.api.morphs.utils.Animation;
 import mchorse.metamorph.api.morphs.utils.IAnimationProvider;
+import mchorse.metamorph.api.morphs.utils.IMorphGenerator;
 import mchorse.metamorph.api.morphs.utils.ISyncableMorph;
 import mchorse.metamorph.bodypart.BodyPartManager;
 import mchorse.metamorph.bodypart.IBodyPartProvider;
@@ -20,7 +24,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  * Animated morph. This morph class allows players and any morph API 
  * consumers to update and render animated models as entities.
  */
-public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, ISyncableMorph, IAnimationProvider
+public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, ISyncableMorph, IAnimationProvider, IMorphGenerator
 {
     /**
      * Animation name
@@ -96,6 +100,28 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
     public Animation getAnimation()
     {
         return this.animation;
+    }
+
+    @Override
+    public boolean canGenerate()
+    {
+        return this.animation.isInProgress();
+    }
+
+    @Override
+    public AbstractMorph genCurrentMorph(float partialTicks)
+    {
+        AnimatedMorph morph = (AnimatedMorph) this.copy();
+
+        morph.initiateAnimator();
+
+        AnimationMesh mesh = morph.animator.animation.meshes.get(0);
+        BOBJArmature original = mesh.getArmature();
+        BOBJArmature armature = morph.animator.animator.useArmature(original);
+
+        morph.pose = this.animation.calculatePose(morph.pose, armature, partialTicks);
+
+        return morph;
     }
 
     @Override
