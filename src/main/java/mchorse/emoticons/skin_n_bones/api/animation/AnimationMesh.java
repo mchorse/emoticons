@@ -3,6 +3,7 @@ package mchorse.emoticons.skin_n_bones.api.animation;
 import mchorse.emoticons.skin_n_bones.api.bobj.BOBJArmature;
 import mchorse.emoticons.skin_n_bones.api.bobj.BOBJBone;
 import mchorse.emoticons.skin_n_bones.api.bobj.BOBJLoader;
+import mchorse.mclib.client.render.VertexBuilder;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;
@@ -13,8 +14,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL15;
+import org.lwjgl.opengl.GL20;
 
 import javax.vecmath.Matrix4f;
+import javax.vecmath.Point2f;
+import javax.vecmath.Point3f;
 import javax.vecmath.Vector3f;
 import javax.vecmath.Vector4f;
 import java.nio.DoubleBuffer;
@@ -74,12 +78,14 @@ public class AnimationMesh
     /* Buffers */
     public FloatBuffer vertices;
     public FloatBuffer normals;
+    public FloatBuffer tangents;
     public DoubleBuffer textcoords;
     public IntBuffer indices;
 
     /* GL buffers */
     public int vertexBuffer;
     public int normalBuffer;
+    public int tangentBuffer;
     public int texcoordBuffer;
     public int indexBuffer;
 
@@ -123,6 +129,8 @@ public class AnimationMesh
         this.normals = BufferUtils.createFloatBuffer(this.data.normData.length);
         this.normals.put(this.data.normData).flip();
 
+        this.tangents = BufferUtils.createFloatBuffer(this.data.posData.length);
+
         this.textcoords = BufferUtils.createDoubleBuffer(this.data.texData.length);
         this.textcoords.put(this.data.texData).flip();
 
@@ -136,6 +144,8 @@ public class AnimationMesh
         this.normalBuffer = GL15.glGenBuffers();
         GL15.glBindBuffer(GL15.GL_ARRAY_BUFFER, this.normalBuffer);
         GL15.glBufferData(GL15.GL_ARRAY_BUFFER, this.normals, GL15.GL_STATIC_DRAW);
+
+        this.tangentBuffer = GL15.glGenBuffers();
 
         this.texcoordBuffer = GL15.glGenBuffers();
         GL15.glBindBuffer(GL15.GL_ARRAY_BUFFER, this.texcoordBuffer);
@@ -258,6 +268,7 @@ public class AnimationMesh
 
         this.updateVertices(newVertices);
         this.updateNormals(newNormals);
+        this.updateTangent(newVertices, newNormals);
     }
 
     protected void processData(float[] newVertices, float[] newNormals)
@@ -285,6 +296,75 @@ public class AnimationMesh
 
         GL15.glBindBuffer(GL15.GL_ARRAY_BUFFER, this.normalBuffer);
         GL15.glBufferData(GL15.GL_ARRAY_BUFFER, this.normals, GL15.GL_DYNAMIC_DRAW);
+    }
+
+    /**
+     * Update mesh with given data (Optifine)
+     */
+    public void updateTangent(float[] newVertices, float[] newNormals)
+    {
+        float[] newTangents = new float[newVertices.length];
+        boolean[] updated = new boolean[newVertices.length];
+
+        for (int i = 0; i < this.data.indexData.length / 3; i++)
+        {
+            int i0 = this.data.indexData[i * 3];
+            int i1 = this.data.indexData[i * 3 + 1];
+            int i2 = this.data.indexData[i * 3 + 2];
+
+            if (updated[i0])
+            {
+                newTangents[i1 * 4] = newTangents[i2 * 4] = newTangents[i0 * 4];
+                newTangents[i1 * 4 + 1] = newTangents[i2 * 4 + 1] = newTangents[i0 * 4 + 1];
+                newTangents[i1 * 4 + 2] = newTangents[i2 * 4 + 2] = newTangents[i0 * 4 + 2];
+                newTangents[i1 * 4 + 3] = newTangents[i2 * 4 + 3] = newTangents[i0 * 4 + 3];
+            }
+            else if (updated[i1])
+            {
+                newTangents[i0 * 4] = newTangents[i2 * 4] = newTangents[i1 * 4];
+                newTangents[i0 * 4 + 1] = newTangents[i2 * 4 + 1] = newTangents[i1 * 4 + 1];
+                newTangents[i0 * 4 + 2] = newTangents[i2 * 4 + 2] = newTangents[i1 * 4 + 2];
+                newTangents[i0 * 4 + 3] = newTangents[i2 * 4 + 3] = newTangents[i1 * 4 + 3];
+            }
+            else if (updated[i2])
+            {
+                newTangents[i0 * 4] = newTangents[i1 * 4] = newTangents[i2 * 4];
+                newTangents[i0 * 4 + 1] = newTangents[i1 * 4 + 1] = newTangents[i2 * 4 + 1];
+                newTangents[i0 * 4 + 2] = newTangents[i1 * 4 + 2] = newTangents[i2 * 4 + 2];
+                newTangents[i0 * 4 + 3] = newTangents[i1 * 4 + 3] = newTangents[i2 * 4 + 3];
+            }
+            else
+            {
+                Point3f[] vertices = new Point3f[3];
+                Point2f[] uvs = new Point2f[3];
+                Vector3f normal = new Vector3f();
+
+                vertices[0] = new Point3f(newVertices[i0 * 4], newVertices[i0 * 4 + 1], newVertices[i0 * 4 + 2]);
+                vertices[1] = new Point3f(newVertices[i1 * 4], newVertices[i1 * 4 + 1], newVertices[i1 * 4 + 2]);
+                vertices[2] = new Point3f(newVertices[i2 * 4], newVertices[i2 * 4 + 1], newVertices[i2 * 4 + 2]);
+
+                uvs[0] = new Point2f((float) this.data.texData[i0 * 2], (float) this.data.texData[i0 * 2 + 1]);
+                uvs[1] = new Point2f((float) this.data.texData[i1 * 2], (float) this.data.texData[i1 * 2 + 1]);
+                uvs[2] = new Point2f((float) this.data.texData[i2 * 2], (float) this.data.texData[i2 * 2 + 1]);
+
+                normal = new Vector3f(newNormals[i0 * 3], newNormals[i0 * 3 + 1], newNormals[i0 * 3 + 2]);
+
+                Vector4f tangent = VertexBuilder.calcTangent(vertices, uvs, normal);
+
+                newTangents[i0 * 4] = newTangents[i1 * 4] = newTangents[i2 * 4] = tangent.x * 32767F;
+                newTangents[i0 * 4 + 1] = newTangents[i1 * 4 + 1] = newTangents[i2 * 4 + 1] = tangent.y * 32767F;
+                newTangents[i0 * 4 + 2] = newTangents[i1 * 4 + 2] = newTangents[i2 * 4 + 2] = tangent.z * 32767F;
+                newTangents[i0 * 4 + 3] = newTangents[i1 * 4 + 3] = newTangents[i2 * 4 + 3] = tangent.w * 32767F;
+
+                updated[i0] = updated[i1] = updated[i2] = true;
+            }
+        }
+
+        this.tangents.clear();
+        this.tangents.put(newTangents).flip();
+
+        GL15.glBindBuffer(GL15.GL_ARRAY_BUFFER, this.tangentBuffer);
+        GL15.glBufferData(GL15.GL_ARRAY_BUFFER, this.tangents, GL15.GL_DYNAMIC_DRAW);
     }
 
     /**
@@ -344,6 +424,14 @@ public class AnimationMesh
         GL11.glEnableClientState(GL11.GL_NORMAL_ARRAY);
         GL11.glEnableClientState(GL11.GL_TEXTURE_COORD_ARRAY);
 
+        /* Bind tangent array */
+        if (VertexBuilder.tangentAttrib != -1)
+        {
+            GL15.glBindBuffer(GL15.GL_ARRAY_BUFFER, this.tangentBuffer);
+            GL20.glVertexAttribPointer(VertexBuilder.tangentAttrib, 4, GL11.GL_FLOAT, false, 0, 0);
+            GL20.glEnableVertexAttribArray(VertexBuilder.tangentAttrib);
+        }
+
         /* Render with index buffer */
         GL15.glBindBuffer(GL15.GL_ELEMENT_ARRAY_BUFFER, this.indexBuffer);
         GL11.glDrawElements(GL11.GL_TRIANGLES, this.data.indexData.length, GL11.GL_UNSIGNED_INT, 0);
@@ -355,6 +443,11 @@ public class AnimationMesh
         GL11.glDisableClientState(GL11.GL_VERTEX_ARRAY);
         GL11.glDisableClientState(GL11.GL_NORMAL_ARRAY);
         GL11.glDisableClientState(GL11.GL_TEXTURE_COORD_ARRAY);
+
+        if (VertexBuilder.tangentAttrib != -1)
+        {
+            GL20.glDisableVertexAttribArray(VertexBuilder.tangentAttrib);
+        }
 
         if (smooth && normals) GL11.glShadeModel(GL11.GL_FLAT);
         if (!normals) RenderHelper.enableStandardItemLighting();
