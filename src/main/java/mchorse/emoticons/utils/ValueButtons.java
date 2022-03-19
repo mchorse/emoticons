@@ -33,7 +33,7 @@ public class ValueButtons extends ValueGUI
             Emotes.register();
             ClientProxy.reloadActions();
         });
-        GuiButtonElement open = new GuiButtonElement(mc, IKey.lang("emoticons.config.open"), (button) -> GuiUtils.openWebLink(new File(ClientProxy.configFolder, "emotes").toURI()));
+        GuiButtonElement open = new GuiButtonElement(mc, IKey.lang("emoticons.config.open"), (button) -> GuiUtils.openFolder(new File(ClientProxy.configFolder, "emotes").getAbsolutePath()));
 
         return Arrays.asList(Elements.row(mc, 5, 0, 20, reload, open));
     }
