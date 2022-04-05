@@ -69,7 +69,7 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
     {
         this.animation.pause(offset);
 
-        if (previous instanceof IMorphProvider)
+        while (previous instanceof IMorphProvider)
         {
             previous = ((IMorphProvider) previous).getMorph();
         }
@@ -174,18 +174,13 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
     public void render(EntityLivingBase entity, double x, double y, double z, float entityYaw, float partialTicks)
     {
         this.parts.initBodyParts();
+        this.initiateAnimator();
 
         if (this.userConfigChanged)
         {
             this.userConfigChanged = false;
-
-            if (this.animator != null)
-            {
-                this.updateAnimator();
-            }
+            this.updateAnimator();
         }
-
-        this.initiateAnimator();
 
         if (this.animator != null)
         {
@@ -220,17 +215,13 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
     @SideOnly(Side.CLIENT)
     protected void updateAnimator(EntityLivingBase target)
     {
+        this.initiateAnimator();
+
         if (this.userConfigChanged)
         {
             this.userConfigChanged = false;
-
-            if (this.animator != null)
-            {
-                this.updateAnimator();
-            }
+            this.updateAnimator(target);
         }
-
-        this.initiateAnimator();
 
         if (this.animator != null && !this.isPaused())
         {
@@ -302,6 +293,59 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
         }
 
         return false;
+    }
+
+    @Override
+    public void afterMerge(AbstractMorph morph)
+    {
+        super.afterMerge(morph);
+
+        while (morph instanceof IMorphProvider)
+        {
+            morph = ((IMorphProvider) morph).getMorph();
+        }
+
+        if (morph instanceof IBodyPartProvider)
+        {
+            this.recursiveAfterMerge(this, (IBodyPartProvider) morph);
+        }
+
+        if (morph instanceof AnimatedMorph)
+        {
+            AnimatedMorph animated = (AnimatedMorph) morph;
+
+            if (Objects.equal(this.animationName, animated.animationName))
+            {
+                this.animation.last = animated.pose == null ? new AnimatedPose() : animated.pose.clone();
+
+                if (animated.animator != null)
+                {
+                    this.animator = animated.animator;
+                    this.animator.morph = this;
+                    this.animator.fetchAnimation();
+                    this.userConfigChanged = true;
+                }
+            }
+        }
+    }
+
+    private void recursiveAfterMerge(IBodyPartProvider target, IBodyPartProvider destination)
+    {
+        for (int i = 0, c = target.getBodyPart().parts.size(); i < c; i++)
+        {
+            if (i >= destination.getBodyPart().parts.size())
+            {
+                break;
+            }
+
+            AbstractMorph a = target.getBodyPart().parts.get(i).morph.get();
+            AbstractMorph b = destination.getBodyPart().parts.get(i).morph.get();
+
+            if (a != null)
+            {
+                a.afterMerge(b);
+            }
+        }
     }
 
     @Override

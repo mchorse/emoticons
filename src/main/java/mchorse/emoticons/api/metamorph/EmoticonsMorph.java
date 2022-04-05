@@ -52,18 +52,13 @@ public class EmoticonsMorph extends AnimatedMorph
         }
 
         this.parts.initBodyParts();
+        this.initiateAnimator();
 
         if (this.userConfigChanged)
         {
             this.userConfigChanged = false;
-
-            if (this.animator != null)
-            {
-                this.updateAnimator();
-            }
+            this.updateAnimator();
         }
-
-        this.initiateAnimator();
 
         if (this.animator != null && this.animator.animation != null)
         {
