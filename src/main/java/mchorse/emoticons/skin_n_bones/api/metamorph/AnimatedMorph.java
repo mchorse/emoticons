@@ -78,7 +78,7 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
 
         if (previous instanceof AnimatedMorph)
         {
-            pose = ((AnimatedMorph) previous).pose;
+            pose = ((AnimatedMorph) previous).getCurrentPose(0F);
 
             if (pose != null)
             {
@@ -113,13 +113,7 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
     {
         AnimatedMorph morph = (AnimatedMorph) this.copy();
 
-        morph.initiateAnimator();
-
-        AnimationMesh mesh = morph.animator.animation.meshes.get(0);
-        BOBJArmature original = mesh.getArmature();
-        BOBJArmature armature = morph.animator.animator.useArmature(original);
-
-        morph.pose = this.animation.calculatePose(morph.pose, armature, partialTicks);
+        morph.pose = this.getCurrentPose(partialTicks);
 
         return morph;
     }
@@ -280,7 +274,7 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
 
                 this.animation.paused = false;
 
-                this.animation.last = this.pose == null ? new AnimatedPose() : this.pose.clone();
+                this.animation.last = this.getCurrentPose(0F);
                 this.userConfigData = animated.userConfigData.copy();
                 this.userConfigChanged = true;
                 this.pose = animated.pose == null ? null : animated.pose.clone();
@@ -316,7 +310,7 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
 
             if (Objects.equal(this.animationName, animated.animationName))
             {
-                this.animation.last = animated.pose == null ? new AnimatedPose() : animated.pose.clone();
+                this.animation.last = animated.getCurrentPose(0F);
 
                 if (animated.animator != null)
                 {
@@ -346,6 +340,17 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
                 a.afterMerge(b);
             }
         }
+    }
+
+    private AnimatedPose getCurrentPose(float partialTicks)
+    {
+        this.initiateAnimator();
+
+        AnimationMesh mesh = this.animator.animation.meshes.get(0);
+        BOBJArmature original = mesh.getArmature();
+        BOBJArmature armature = this.animator.animator.useArmature(original);
+
+        return this.animation.calculatePose(this.pose, armature, partialTicks).clone();
     }
 
     @Override
