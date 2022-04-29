@@ -17,6 +17,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraftforge.common.util.Constants.NBT;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -344,6 +345,11 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
 
     private AnimatedPose getCurrentPose(float partialTicks)
     {
+        if (FMLCommonHandler.instance().getEffectiveSide().isServer())
+        {
+            return this.pose == null ? new AnimatedPose() : this.pose.clone();
+        }
+
         this.initiateAnimator();
 
         AnimationMesh mesh = this.animator.animation.meshes.get(0);
