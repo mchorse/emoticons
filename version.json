@@ -1,6 +1,7 @@
 {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/emoticons/",
     "1.12.2": {
+        "1.1": "This update was made by MiaoNLI and it features some fixes and adjustments for the new Blockbuster version.",
         "1.0.2": "This patch fixes stretching shadow and weird right hand extrusion thanks to MiaoNLI's discovery (also special thanks to Chryfi for testing the fix) and placeholder morph merging.",
         "1.0.1": "This patch fixes a couple of bugs.",
         "1.0": "This update adds more emotes, morph emote system for props (requires Metamorph), a couple of tweaks, and handful of bug fixes.",
