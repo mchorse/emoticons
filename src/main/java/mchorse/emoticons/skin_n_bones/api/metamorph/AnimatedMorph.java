@@ -352,6 +352,11 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
 
         this.initiateAnimator();
 
+        if (this.animator.animation == null)
+        {
+            return this.pose == null ? new AnimatedPose() : this.pose.clone();
+        }
+
         AnimationMesh mesh = this.animator.animation.meshes.get(0);
         BOBJArmature original = mesh.getArmature();
         BOBJArmature armature = this.animator.animator.useArmature(original);
