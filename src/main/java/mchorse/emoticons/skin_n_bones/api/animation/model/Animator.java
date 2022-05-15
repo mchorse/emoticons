@@ -165,8 +165,8 @@ public class Animator implements IAnimator
      */
     protected void controlActions(EntityLivingBase target)
     {
-        double dx = target.posX - this.prevX;
-        double dz = target.posZ - this.prevZ;
+        double dx = target.posX - target.prevPosX;
+        double dz = target.posZ - target.prevPosZ;
         boolean creativeFlying = target instanceof EntityPlayer && ((EntityPlayer) target).capabilities.isFlying;
         boolean wet = target.isInWater();
         final float threshold = creativeFlying ? 0.1F : (wet ? 0.025F : 0.01F);
