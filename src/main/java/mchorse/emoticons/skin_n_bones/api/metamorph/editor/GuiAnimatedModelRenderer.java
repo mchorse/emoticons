@@ -1,16 +1,23 @@
 package mchorse.emoticons.skin_n_bones.api.metamorph.editor;
 
 import mchorse.emoticons.skin_n_bones.api.animation.model.AnimatorController;
+import mchorse.emoticons.skin_n_bones.api.animation.model.AnimatorHeldItemConfig;
 import mchorse.emoticons.skin_n_bones.api.bobj.BOBJArmature;
 import mchorse.emoticons.skin_n_bones.api.bobj.BOBJBone;
+import mchorse.emoticons.skin_n_bones.api.metamorph.AnimatorMorphController;
 import mchorse.mclib.client.Draw;
 import mchorse.mclib.client.gui.framework.elements.GuiModelRenderer;
+import mchorse.mclib.client.gui.framework.elements.input.GuiTransformations;
 import mchorse.mclib.client.gui.framework.elements.utils.GuiContext;
 import mchorse.mclib.utils.DummyEntity;
+import mchorse.mclib.utils.MatrixUtils;
+import mchorse.mclib.utils.RenderingUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import org.lwjgl.opengl.GL11;
 
+import javax.vecmath.Matrix4f;
+import javax.vecmath.Vector3d;
 import java.util.List;
 
 public class GuiAnimatedModelRenderer extends GuiModelRenderer
@@ -128,7 +135,31 @@ public class GuiAnimatedModelRenderer extends GuiModelRenderer
         if (bone.name.equals(this.bone))
         {
             Draw.cube(-size, -size, -size, size, size, size, 0F, 1F, 0F, 0.5F);
-            Draw.axis(0.1F);
+
+            if (this.controller instanceof AnimatorMorphController)
+            {
+                AnimatorMorphController morphController = (AnimatorMorphController) this.controller;
+                AnimatorHeldItemConfig transform = morphController.morph.pose.bones.get(bone.name);
+
+                if (transform != null)
+                {
+                    GlStateManager.pushMatrix();
+
+                    if (GuiTransformations.GuiStaticTransformOrientation.getOrientation() == GuiTransformations.TransformOrientation.GLOBAL)
+                    {
+                        RenderingUtils.glRevertRotationScale(new Vector3d(transform.rotateX, transform.rotateY, transform.rotateZ),
+                                                             new Vector3d(transform.scaleX, transform.scaleY, transform.scaleZ),
+                                                             MatrixUtils.RotationOrder.XYZ);
+                    }
+
+                    Draw.axis(0.1F);
+                    GlStateManager.popMatrix();
+                }
+            }
+            else
+            {
+                Draw.axis(0.1F);
+            }
         }
         else
         {

@@ -271,6 +271,14 @@ public class GuiAnimatedMorphPanel extends GuiMorphPanel<AnimatedMorph, GuiAnima
         }
 
         @Override
+        public void localTranslate(double x, double y, double z)
+        {
+            this.trans.addTranslation(x, y, z, GuiStaticTransformOrientation.getOrientation());
+
+            this.fillT(this.trans.x, this.trans.y, this.trans.z);
+        }
+
+        @Override
         public void setT(double x, double y, double z)
         {
             this.trans.x = (float) x;
