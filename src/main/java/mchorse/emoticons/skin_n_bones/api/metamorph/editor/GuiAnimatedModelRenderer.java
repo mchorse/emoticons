@@ -136,14 +136,16 @@ public class GuiAnimatedModelRenderer extends GuiModelRenderer
         {
             Draw.cube(-size, -size, -size, size, size, size, 0F, 1F, 0F, 0.5F);
 
+            GlStateManager.pushMatrix();
+
             if (this.controller instanceof AnimatorMorphController)
             {
                 AnimatorMorphController morphController = (AnimatorMorphController) this.controller;
-                AnimatorHeldItemConfig transform = morphController.morph.pose.bones.get(bone.name);
 
-                if (transform != null)
+                if (morphController.morph != null && morphController.morph.pose != null
+                    && morphController.morph.pose.bones.get(bone.name) != null)
                 {
-                    GlStateManager.pushMatrix();
+                    AnimatorHeldItemConfig transform = morphController.morph.pose.bones.get(bone.name);
 
                     if (GuiTransformations.GuiStaticTransformOrientation.getOrientation() == GuiTransformations.TransformOrientation.GLOBAL)
                     {
@@ -151,15 +153,11 @@ public class GuiAnimatedModelRenderer extends GuiModelRenderer
                                                              new Vector3d(transform.scaleX, transform.scaleY, transform.scaleZ),
                                                              MatrixUtils.RotationOrder.XYZ);
                     }
-
-                    Draw.axis(0.1F);
-                    GlStateManager.popMatrix();
                 }
             }
-            else
-            {
-                Draw.axis(0.1F);
-            }
+
+            Draw.axis(0.1F);
+            GlStateManager.popMatrix();
         }
         else
         {
