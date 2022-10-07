@@ -39,7 +39,7 @@ A: Yes, watch [this tutorial](https://youtu.be/dhSYT2HEweM) video! Those are not
 A: No, because I have no time/skill to make cool tunes for every emote, and if I use the original audio that would be illegal. However, you can replace the sounds in Emoticons' jar. Keep in mind that these sounds are going to loop.
 
 **Q: I saw emotes were used in a Minecraft client. Are they allowed?**  
-A: Before January 18th, 2022, only [Badlion Client](https://client.badlion.net/), [Lunar Client](https://www.lunarclient.com/), [Crystal Client](https://crystalclient.net/), and a couple of other purchased a license to use my work in their software for profit. Other clients were doing that illegaly (like kraft rise and kristalix clients).
+A: Before January 18th, 2022, only [Badlion Client](https://client.badlion.net/), [Lunar Client](https://www.lunarclient.com/), [Crystal Client](https://crystalclient.net/), and a couple of other purchased a license to use my work in their software for profit. Other clients were doing that illegaly (like craftrise and kristalix clients).
 
 **Q: Can I use this code in my Minecraft client?**  
 A: Read the license, and make a conclusion on your own.
