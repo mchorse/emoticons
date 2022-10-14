@@ -1,6 +1,7 @@
 {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/emoticons/",
     "1.12.2": {
+        "1.1.1": "This update was made by Chryfi and MiaoNLI and it fixes some issues.",
         "1.1": "This update was made by MiaoNLI and it features some fixes and adjustments for the new Blockbuster version.",
         "1.0.2": "This patch fixes stretching shadow and weird right hand extrusion thanks to MiaoNLI's discovery (also special thanks to Chryfi for testing the fix) and placeholder morph merging.",
         "1.0.1": "This patch fixes a couple of bugs.",
@@ -22,7 +23,7 @@
         "0.1": "Initial release. It adds custom player animations and emote system, featuring over 25 emotes (custom and from Fortnite)."
     },
     "promos": {
-        "1.12.2-latest": "1.1",
-        "1.12.2-recommended": " 1.1"
+        "1.12.2-latest": "1.1.1",
+        "1.12.2-recommended": " 1.1.1"
     }
 }
