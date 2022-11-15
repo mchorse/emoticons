@@ -54,12 +54,6 @@ public class EmoticonsMorph extends AnimatedMorph
         this.parts.initBodyParts();
         this.initiateAnimator();
 
-        if (this.userConfigChanged)
-        {
-            this.userConfigChanged = false;
-            this.updateAnimator();
-        }
-
         if (this.animator != null && this.animator.animation != null)
         {
             this.animator.render(this.emote, entity, x, y, z, 0, partialTicks);

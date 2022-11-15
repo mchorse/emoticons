@@ -171,12 +171,6 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
         this.parts.initBodyParts();
         this.initiateAnimator();
 
-        if (this.userConfigChanged)
-        {
-            this.userConfigChanged = false;
-            this.updateAnimator();
-        }
-
         if (this.animator != null)
         {
             this.animator.render(entity, x, y, z, entityYaw, partialTicks);
@@ -210,13 +204,17 @@ public class AnimatedMorph extends AbstractMorph implements IBodyPartProvider, I
     @SideOnly(Side.CLIENT)
     protected void updateAnimator(EntityLivingBase target)
     {
-        this.initiateAnimator();
-
         if (this.userConfigChanged)
         {
             this.userConfigChanged = false;
-            this.updateAnimator(target);
+
+            if (this.animator != null)
+            {
+                this.updateAnimator();
+            }
         }
+
+        this.initiateAnimator();
 
         if (this.animator != null && !this.isPaused())
         {
