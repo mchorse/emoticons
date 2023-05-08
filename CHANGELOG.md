@@ -1,3 +1,11 @@
+## Version 1.1.2
+
+**Compatible** with McLib **2.4.2** and optionally with Blockbuster **2.6.1** and Metamorph **1.3.1**. It doesn't mean that future versions of McLib, Blockbuster and Metamorph would be incompatible, but older versions are most likely incompatible.
+
+This update was made by Chryfi.
+
+* Fixed morph actions animation making emoticons action animation flicker
+
 ## Version 1.1.1
 
 **Compatible** with McLib **2.4.1** and optionally with Blockbuster **2.6** and Metamorph **1.3.1**. It doesn't mean that future versions of McLib, Blockbuster and Metamorph would be incompatible, but older versions are most likely incompatible.
